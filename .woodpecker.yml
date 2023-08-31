@@ -1,0 +1,14 @@
+pipeline:
+  build:
+    image: docker.io/bilelmoussaoui/flatpak-github-actions
+    secrets: [codeberg_token]
+    when:
+      branch: main
+      event: [push, pull_request, tag]
+    commands:
+      - flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      - flatpak install --user -y org.flatpak.Builder
+      - flatpak run org.flatpak.Builder --user --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir page.codeberg.sungsphinx.Dog.json
+      - flatpak build-bundle build-repo Dog.flatpak page.codeberg.sungsphinx.Dog
+      - ls -la
+      - curl --user $CI_REPO_OWNER:$CODEBERG_TOKEN --upload-file Dog.flatpak https://codeberg.org/api/packages/$CI_REPO_OWNER/generic/$CI_REPO_NAME/$CI_BUILD_NUMBER/Dog.flatpak
