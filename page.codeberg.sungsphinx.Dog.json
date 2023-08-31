@@ -30,7 +30,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://codeberg.org/sungsphinx/Dog.git"
+                    "url" : "https://codeberg.org/sungsphinx/Dog.git",
+                    "branch": "main"
                 }
             ]
         }
