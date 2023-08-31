@@ -14,9 +14,6 @@
   <a href="https://stopthemingmy.app" title="Please do not theme this app">
     <img src="https://stopthemingmy.app/badge.svg">
   </a>
-  <a href="https://stopthemingmy.app" title="Follow me on Mastodon">
-    <img alt="Follow me on Mastodon" src="https://img.shields.io/mastodon/follow/109926375978207093">
-  </a>
 
   <hr />
 
