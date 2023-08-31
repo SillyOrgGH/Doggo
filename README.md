@@ -27,7 +27,7 @@
 
 <br/>
 
-# Clone Repo?
+## Clone Repo?
 1. Make sure git is installed.
 2. Run ```git clone https://codeberg.org/sungsphinx/Dog.git``` in the directory you want to clone this repo to.
 
