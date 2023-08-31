@@ -22,7 +22,7 @@
 
   <a href="https://sungsphinx.codeberg.page">Website</a> ·
   <a href="https://codeberg.org/sungsphinx/Dog/issues">Issue Tracker</a> · 
-  <a href="https://codeberg.org/sungsphinx/Dog#install-create-bundle">Setup</a>
+  <a href="https://codeberg.org/sungsphinx/Dog#install-create-bundle">Install/Create Bundle</a>
 </div>
 
 <br/>
