@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dog
+Exec=dog
+Icon=page.codeberg.sungsphinx.Dog
+Terminal=false
+Type=Application
+Categories=GTK;Game;
+StartupNotify=true

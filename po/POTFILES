@@ -1,0 +1,6 @@
+data/page.codeberg.sungsphinx.Dog.desktop.in
+data/page.codeberg.sungsphinx.Dog.appdata.xml.in
+data/page.codeberg.sungsphinx.Dog.gschema.xml
+src/main.c
+src/dog-window.c
+src/dog-window.ui

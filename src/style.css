@@ -1,0 +1,9 @@
+.PetButton {
+    color: white;
+    background-color: @green_5;
+}
+
+.AbandonButton {
+    color: white;
+    background-color: @red_2;
+}
