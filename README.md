@@ -22,7 +22,8 @@
 
   <a href="https://sungsphinx.codeberg.page">Website</a> ·
   <a href="https://codeberg.org/sungsphinx/Dog/issues">Issue Tracker</a> · 
-  <a href="https://codeberg.org/sungsphinx/Dog#install-create-bundle">Install/Create Bundle</a>
+  <a href="https://codeberg.org/sungsphinx/Dog#install-create-bundle">Install/Create Bundle</a> · 
+  <a href="https://codeberg.org/sungsphinx/Dog/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
 </div>
 
 <br/>
