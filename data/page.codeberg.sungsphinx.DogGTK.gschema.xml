@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="dog">
-	<schema id="page.codeberg.sungsphinx.Dog" path="/page/codeberg/sungsphinx/Dog/">
+	<schema id="page.codeberg.sungsphinx.DogGTK" path="/page/codeberg/sungsphinx/Dog/">
 	</schema>
 </schemalist>
