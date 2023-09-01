@@ -1,5 +1,5 @@
 {
-    "app-id" : "page.codeberg.sungsphinx.Dog",
+    "app-id" : "page.codeberg.sungsphinx.DogGTK",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "44",
     "sdk" : "org.gnome.Sdk",
@@ -29,7 +29,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://codeberg.org/sungsphinx/Dog.git",
+                    "url" : "https://codeberg.org/sungsphinx/DogGTK.git",
                     "branch": "main"
                 }
             ]
