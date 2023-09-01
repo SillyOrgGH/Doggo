@@ -11,9 +11,9 @@
     <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg">
   </a>
   <br>
-  <a href="https://stopthemingmy.app" title="Please do not theme this app">
+  <!--<a href="https://stopthemingmy.app" title="Please do not theme this app">
     <img src="https://stopthemingmy.app/badge.svg">
-  </a>
+  </a>-->
 
   <hr />
 
