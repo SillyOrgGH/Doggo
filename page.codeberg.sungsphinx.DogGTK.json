@@ -4,7 +4,6 @@
     "runtime-version" : "44",
     "sdk" : "org.gnome.Sdk",
     "command" : "dog",
-    "tags": ["devel"],
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
