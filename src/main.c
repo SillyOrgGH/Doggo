@@ -35,7 +35,7 @@ main (int   argc,
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
 
-	app = dog_application_new ("page.codeberg.sungsphinx.Dog", G_APPLICATION_DEFAULT_FLAGS);
+	app = dog_application_new ("page.codeberg.sungsphinx.DogGTK", G_APPLICATION_DEFAULT_FLAGS);
 	ret = g_application_run (G_APPLICATION (app), argc, argv);
 
 	return ret;
