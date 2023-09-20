@@ -83,14 +83,14 @@ dog_application_about_action (GSimpleAction *action,
 
 	adw_show_about_window (window,
 	                       "application-name", "Dog",
-	                       "application-icon", "page.codeberg.sungsphinx.Dog",
+	                       "application-icon", "page.codeberg.sungsphinx.DogGTK",
 	                       "developer-name", "sungsphinx",
 	                       "version", "1.0",
 	                       "developers", developers,
                                "artists", artists,
 	                       "copyright", "© 2023 sungsphinx",
                                "website", "https://sungsphinx.codeberg.page",
-                               "issue-url", "https://codeberg.org/sungsphinx/Dog/issues",
+                               "issue-url", "https://codeberg.org/sungsphinx/DogGTK/issues",
 	                       NULL);
 
 }
