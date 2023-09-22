@@ -4,6 +4,7 @@
     "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "dog",
+    "desktop-file-name-suffix" : " (Deprecated)",
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
