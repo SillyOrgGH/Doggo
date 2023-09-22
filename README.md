@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://codeberg.org/sungsphinx/Dog/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.sungsphinx.DogGTK.svg" width="120">
-  <h1 align="center">Dog (GTK) — <a href="https://sungsphinx.codeberg.page/redirects/dogqt">UNMAINTAINED</a></h1>
+  <h1 align="center">Dog (GTK)</h1>
   <p align="center">GTK4 + LibAdwaita test. With a Dog which likes the GPL-3.0 license.</p>
 </div>
 
