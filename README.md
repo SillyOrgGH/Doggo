@@ -18,7 +18,8 @@
   <hr />
 
   <a href="https://sungsphinx.codeberg.page">Website</a> ·
-  <a href="https://codeberg.org/sungsphinx/DogGTK/issues">Issue Tracker</a> · 
+  <a href="https://codeberg.org/sungsphinx/RepoIssues/issues">Issue Tracker (All Projects)</a> · 
+  <a href="https://codeberg.org/sungsphinx/RepoIssues/issues?labels=150453">Issue Tracker (This Project)</a> · 
   <a href="https://codeberg.org/sungsphinx/DogGTK#install-create-bundle">Install/Create Bundle</a> · 
   <a href="https://codeberg.org/sungsphinx/DogGTK/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
 </div>
