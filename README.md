@@ -28,7 +28,7 @@
 
 ## Clone Repo?
 1. Make sure git is installed.
-2. Run ```git clone https://codeberg.org/WMSA/DogGTK.git``` in the directory you want to clone this repo to.
+2. Run ```git clone https://codeberg.org/WMA/DogGTK.git``` in the directory you want to clone this repo to.
 
 ## Install/Create Bundle
 
@@ -53,7 +53,7 @@ flatpak-builder --repo=repo --force-clean build-dir page.codeberg.sungsphinx.Dog
 ```
 This will create a ```build-dir``` folder and create a repo. Next, run 
 ```
-flatpak build-bundle repo page.codeberg.WMSA.DogGTK.flatpak page.codeberg.sungsphinx.DogGTK
+flatpak build-bundle repo page.codeberg.WMA.DogGTK.flatpak page.codeberg.sungsphinx.DogGTK
 ``` 
 This will create a bundle (.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
 
