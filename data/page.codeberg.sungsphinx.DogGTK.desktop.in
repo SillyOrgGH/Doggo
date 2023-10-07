@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Dog
 Exec=dog
-Icon=page.codeberg.sungsphinx.DogGTK
+Icon=page.codeberg.SOrg.DogGTK
 Terminal=false
 Type=Application
-Categories=GTK;Game;
+Categories=GNOME;GTK;Game;
 StartupNotify=true
