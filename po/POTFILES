@@ -1,6 +1,6 @@
-data/page.codeberg.sungsphinx.DogGTK.desktop.in
-data/page.codeberg.sungsphinx.DogGTK.appdata.xml.in
-data/page.codeberg.sungsphinx.DogGTK.gschema.xml
+data/page.codeberg.SOrg.DogGTK.desktop.in
+data/page.codeberg.SOrg.DogGTK.appdata.xml.in
+data/page.codeberg.SOrg.DogGTK.gschema.xml
 src/main.c
 src/dog-window.c
 src/dog-window.ui
