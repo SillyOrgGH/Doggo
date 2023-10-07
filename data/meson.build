@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-        input: 'page.codeberg.sungsphinx.DogGTK.desktop.in',
-       output: 'page.codeberg.sungsphinx.DogGTK.desktop',
+        input: 'page.codeberg.SOrg.DogGTK.desktop.in',
+       output: 'page.codeberg.SOrg.DogGTK.desktop',
          type: 'desktop',
        po_dir: '../po',
       install: true,
@@ -13,8 +13,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'page.codeberg.sungsphinx.DogGTK.appdata.xml.in',
-       output: 'page.codeberg.sungsphinx.DogGTK.appdata.xml',
+        input: 'page.codeberg.SOrg.DogGTK.appdata.xml.in',
+       output: 'page.codeberg.SOrg.DogGTK.appdata.xml',
        po_dir: '../po',
       install: true,
   install_dir: join_paths(get_option('datadir'), 'appdata')
@@ -25,7 +25,7 @@ if appstream_util.found()
   test('Validate appstream file', appstream_util, args: ['validate', appstream_file])
 endif
 
-install_data('page.codeberg.sungsphinx.DogGTK.gschema.xml',
+install_data('page.codeberg.SOrg.DogGTK.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 
