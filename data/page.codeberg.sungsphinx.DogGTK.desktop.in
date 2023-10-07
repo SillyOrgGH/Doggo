@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Dog
+Comment=GTK4 + LibAdwaita test. With a Dog.
 Exec=dog
 Icon=page.codeberg.SOrg.DogGTK
 Terminal=false
