@@ -19,7 +19,7 @@
 
   <a href="https://sorg.codeberg.page">Website</a> ·
   <a href="https://codeberg.org/sungsphinx/RepoIssues/issues">Issue Tracker (All sungsphinx Projects)</a> · 
-  <a href="https://codeberg.org/sungsphinx/RepoIssues/issues?labels=150453">Issue Tracker (This Project)</a> · 
+  <a href="https://codeberg.org/SOrg/DogGTK/issues">Issue Tracker (This Project)</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK#install-create-bundle">Install/Create Bundle</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
 </div>
