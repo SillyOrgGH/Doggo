@@ -40,7 +40,7 @@
 
             <child>
               <object class="AdwStatusPage" id="home_page">
-                <property name="icon-name">page.codeberg.sungsphinx.DogGTK</property>
+                <property name="icon-name">page.codeberg.SOrg.DogGTK</property>
 
                 <property name="title">Diggity Dawg spotted</property>
                 <property name="description">Look after this dog, I can't be bothered</property>
@@ -65,7 +65,7 @@
                             <child>
                               <object class="AdwButtonContent">
                                 <property name="label">Pet the dog</property>
-                                <property name="icon-name">page.codeberg.sungsphinx.DogGTK-symbolic</property>
+                                <property name="icon-name">page.codeberg.SOrg.DogGTK-symbolic</property>
                                 <property name="halign">center</property>
                               </object>
                             </child>
