@@ -1,4 +1,4 @@
-application_id = 'page.codeberg.sungsphinx.DogGTK'
+application_id = 'page.codeberg.SOrg.DogGTK'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(
