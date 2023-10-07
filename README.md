@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.sungsphinx.DogGTK.svg" width="120">
+  <img src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120">
   <h1 align="center">Dog (GTK)</h1>
   <p align="center">GTK4 + LibAdwaita test. With a Dog which likes the GPL-3.0 license.</p>
 </div>
@@ -17,8 +17,8 @@
 
   <hr />
 
-  <a href="https://sungsphinx.codeberg.page">Website</a> ·
-  <a href="https://codeberg.org/sungsphinx/RepoIssues/issues">Issue Tracker (All Projects)</a> · 
+  <a href="https://sorg.codeberg.page">Website</a> ·
+  <a href="https://codeberg.org/sungsphinx/RepoIssues/issues">Issue Tracker (All sungsphinx Projects)</a> · 
   <a href="https://codeberg.org/sungsphinx/RepoIssues/issues?labels=150453">Issue Tracker (This Project)</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK#install-create-bundle">Install/Create Bundle</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
@@ -34,26 +34,26 @@
 
 1. Install Flatpak (if it isn't already, with Flathub available) and flatpak-builder.
 
-2. Download the ```page.codeberg.sungsphinx.DogGTK.json``` file and make a folder to put it in.
+2. Download the ```page.codeberg.SOrg.DogGTK.json``` file and make a folder to put it in.
 
 3. Open a terminal in that folder and run:
 ```
-flatpak-builder build-dir page.codeberg.sungsphinx.DogGTK.json
+flatpak-builder build-dir page.codeberg.SOrg.DogGTK.json
 ```
 
 4. If the command finishes successfully, now you have 2 options:
 * 4a. Install Directly: 
 ```
-flatpak-builder --user --install --force-clean build-dir page.codeberg.sungsphinx.DogGTK.json
+flatpak-builder --user --install --force-clean build-dir page.codeberg.SOrg.DogGTK.json
 ```
 
 * 4b. Build Bundle (Preferred): First, run: 
 ```
-flatpak-builder --repo=repo --force-clean build-dir page.codeberg.sungsphinx.DogGTK.json
+flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.json
 ```
 This will create a ```build-dir``` folder and create a repo. Next, run 
 ```
-flatpak build-bundle repo page.codeberg.SOrg.DogGTK.flatpak page.codeberg.sungsphinx.DogGTK
+flatpak build-bundle repo page.codeberg.SOrg.DogGTK.flatpak page.codeberg.SOrg.DogGTK
 ``` 
 This will create a bundle (.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
 
