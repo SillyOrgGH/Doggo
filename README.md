@@ -65,4 +65,5 @@ This will create a bundle (.flatpak). Read more about single-file bundles [here]
 ## Credits
 [Google](https://about.google) - [Noto (& Color) Emoji](https://github.com/googlefonts/noto-emoji)\
 [Bilal Elmoussaoui](https://belmoussaoui.com) - [Icon Library app](https://flathub.org/apps/org.gnome.design.IconLibrary) (used for repo avatar/icon)\
-[Maximiliano Sandoval](https://gitlab.gnome.org/msandova) - [Emblem app](https://flathub.org/apps/org.gnome.design.Emblem) (used for background gradient of repo avatar/icon)
+[Maximiliano Sandoval](https://gitlab.gnome.org/msandova) - [Emblem app](https://flathub.org/apps/org.gnome.design.Emblem) (used for background gradient of repo avatar/icon)\
+[Bottles Devs](https://github.com/bottlesdevs) / [Codeberg Org](https://codeberg.org/bottlesdevs) - [README Base](https://github.com/bottlesdevs/Bottles/blob/main/README.md)
