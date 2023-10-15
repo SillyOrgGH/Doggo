@@ -16,6 +16,9 @@
   <a href="https://github.com/SOrg-GitHub/DogGTK" title="GitHub Repo (Mirror)">
     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo (Mirror)">
   </a>
+  <a href="#install-create-bundle" title="Flatpak (Linux)">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A" alt="GitHub Repo (Mirror)">
+  </a>
   <br>
   <!--<a href="https://stopthemingmy.app" title="Please do not theme this app">
     <img src="https://stopthemingmy.app/badge.svg">
@@ -25,7 +28,7 @@
 
   <a href="https://sorg.codeberg.page">Website</a> ·
   <a href="https://codeberg.org/SOrg/DogGTK/issues">Issue Tracker</a> · 
-  <a href="https://codeberg.org/SOrg/DogGTK#install-create-bundle">Install/Create Bundle</a> · 
+  <a href="#install-create-bundle">Install/Create Bundle</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
 </div>
 
@@ -37,7 +40,7 @@
 
 ## Install/Create Bundle
 
-1. Install Flatpak (if it isn't already, with Flathub available) and flatpak-builder.
+1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 
 2. Download the ```page.codeberg.SOrg.DogGTK.json``` file and make a folder to put it in.
 
