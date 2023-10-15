@@ -21,12 +21,6 @@
               <class name="flat"></class>
             </style>
 
-            <property name="title-widget">
-              <object class="AdwWindowTitle">
-                <property name="title" translatable="no">Diggity Dawg</property>
-              </object>
-            </property>
-
           </object>
         </child>
 
