@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120">
+  <img src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120">
   <h1 align="center">Dog (GTK)</h1>
   <p align="center">GTK4 + LibAdwaita test. With a Dog which likes the GPL-3.0 license.</p>
 </div>
@@ -24,8 +24,7 @@
   <hr />
 
   <a href="https://sorg.codeberg.page">Website</a> ·
-  <a href="https://codeberg.org/sungsphinx/RepoIssues/issues">Issue Tracker (All sungsphinx Projects)</a> · 
-  <a href="https://codeberg.org/SOrg/DogGTK/issues">Issue Tracker (This Project)</a> · 
+  <a href="https://codeberg.org/SOrg/DogGTK/issues">Issue Tracker</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK#install-create-bundle">Install/Create Bundle</a> · 
   <a href="https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
 </div>
