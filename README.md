@@ -2,6 +2,7 @@
   <img src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120">
   <h1 align="center">Dog (GTK)</h1>
   <p align="center">GTK4 + LibAdwaita test. With a Dog which likes the GPL-3.0 license.</p>
+  <p align="center">We only officially support Flatpak, do not report bugs to us first if not using the Flatpak version.</p>
 </div>
 
 <br/>
