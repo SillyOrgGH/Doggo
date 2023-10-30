@@ -37,7 +37,7 @@ only Flatpak is officialy supported.
 
 3. Open a terminal in that folder and run:
 ```
-flatpak-builder build-dir page.codeberg.SOrg.DogGTK.json
+flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.json
 ```
 
 4. If the command finishes successfully, now you have 2 options:
@@ -46,11 +46,7 @@ flatpak-builder build-dir page.codeberg.SOrg.DogGTK.json
 flatpak-builder --user --install --force-clean build-dir page.codeberg.SOrg.DogGTK.json
 ```
 
-* 4b. Build Bundle (Preferred): First, run: 
-```
-flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.json
-```
-This will create a ```build-dir``` folder and create a repo. Next, run 
+* 4b. Build Bundle (Preferred): Run: 
 ```
 flatpak build-bundle repo page.codeberg.SOrg.DogGTK.flatpak page.codeberg.SOrg.DogGTK
 ``` 
