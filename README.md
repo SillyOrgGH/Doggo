@@ -21,9 +21,6 @@ only Flatpak is officialy supported.
   <a href="#install-create-bundle" title="Flatpak (Linux)">
     <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A" alt="GitHub Repo (Mirror)">
   </a>
-
-
-  <hr />
 </div>
 
 <br/>
