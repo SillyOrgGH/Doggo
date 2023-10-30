@@ -1,13 +1,14 @@
-<div align="center">
-  <img src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120">
-  <h1 align="center">Dog (GTK)</h1>
-  <p align="center">GTK4 + Libadwaita test. With a Dog which likes the GPL-3.0 license.</p>
-  <p align="center">Only Flatpak is officialy supported.</p>
-</div>
+<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120" height="120" align="left">
 
-<br/>
+# Dog (GTK)
+GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license,
+only Flatpak is officialy supported.
 
-<div align="center">
+[Website](https://sorg.codeberg.page) ·
+[Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) ·
+[Install/Create Bundle](#install-create-bundle) ·
+[Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
+
   <a href="https://codeberg.org/SOrg/DogGTK/src/branch/main/COPYING" title="License: GPL v3">
     <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg?style=for-the-badge">
   </a>
@@ -20,17 +21,9 @@
   <a href="#install-create-bundle" title="Flatpak (Linux)">
     <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A" alt="GitHub Repo (Mirror)">
   </a>
-  <br>
-  <!--<a href="https://stopthemingmy.app" title="Please do not theme this app">
-    <img src="https://stopthemingmy.app/badge.svg">
-  </a>-->
+
 
   <hr />
-
-  <a href="https://sorg.codeberg.page">Website</a> ·
-  <a href="https://codeberg.org/SOrg/DogGTK/issues">Issue Tracker</a> · 
-  <a href="#install-create-bundle">Install/Create Bundle</a> · 
-  <a href="https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg">Funny Dog (Bruno)</a>
 </div>
 
 <br/>
@@ -70,4 +63,3 @@ This will create a bundle (.flatpak). Read more about single-file bundles [here]
 [Google](https://about.google) - [Noto (& Color) Emoji](https://github.com/googlefonts/noto-emoji)\
 [Bilal Elmoussaoui](https://belmoussaoui.com) - [Icon Library app](https://flathub.org/apps/org.gnome.design.IconLibrary) (used for repo avatar/icon)\
 [Maximiliano Sandoval](https://gitlab.gnome.org/msandova) - [Emblem app](https://flathub.org/apps/org.gnome.design.Emblem) (used for background gradient of repo avatar/icon)\
-[Bottles Devs](https://github.com/bottlesdevs) / [Codeberg Org](https://codeberg.org/bottlesdevs) - [README Base](https://github.com/bottlesdevs/Bottles/blob/main/README.md)
