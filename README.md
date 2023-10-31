@@ -1,8 +1,7 @@
 <img style="vertical-align: middle;" src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120" height="120" align="left">
 
 # Dog (GTK)
-GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license,
-only Flatpak is officialy supported.
+GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.
 
 [Website](https://sorg.codeberg.page) ·
 [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) ·
@@ -19,7 +18,7 @@ only Flatpak is officialy supported.
     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo (Mirror)">
   </a>
   <a href="#install-create-bundle" title="Flatpak (Linux)">
-    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A" alt="GitHub Repo (Mirror)">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A" alt="Flatpak (Linux)">
   </a>
 </div>
 
@@ -30,6 +29,9 @@ only Flatpak is officialy supported.
 2. Run ```git clone https://codeberg.org/SOrg/DogGTK.git``` in the directory you want to clone this repo to.
 
 ## Install/Create Bundle
+
+> **Note**
+> We only (officialy) support Flatpak, please report bugs to third-party packagers first (if any :rofl:).
 
 1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 
