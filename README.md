@@ -1,3 +1,6 @@
+> **Warning**
+> <br/>**DogGTK as of now is in maintenance mode.**
+
 <img style="vertical-align: middle;" src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120" height="120" align="left">
 
 # Dog (GTK)
