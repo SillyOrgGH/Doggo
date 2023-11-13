@@ -2,32 +2,16 @@
 > **Warning*
 > <br/>**DogGTK as of now is in maintenance mode.**
 -->
+[![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
+[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
+[![License: GPL-3.0-or-later](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/GPLv3OrLaterBadge.svg)](https://codeberg.org/SOrg/DogQt/src/branch/main/LICENSE)
+[![Flatpak (Linux)](https://img.shields.io/static/v1?message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A)](#install-create-bundle)
 
-<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120" height="120" align="left">
+<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
 
 # Dog (GTK)
-GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.
-
-[Website](https://sorg.codeberg.page) ·
-[Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) ·
-[Install/Create Bundle](#install-create-bundle) ·
-[Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
-
-  <a href="https://codeberg.org/SOrg/DogGTK/src/branch/main/COPYING" title="License: GPL v3">
-    <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg?style=for-the-badge">
-  </a>
-  <a href="https://codeberg.org/SOrg/DogGTK" title="Codeberg Repo">
-    <img src="https://img.shields.io/badge/Codeberg-2185D0?style=for-the-badge&logo=Codeberg&logoColor=white" alt="Codeberg Repo">
-  </a>
-  <a href="https://github.com/SOrg-GitHub/DogGTK" title="GitHub Repo (Mirror)">
-    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo (Mirror)">
-  </a>
-  <a href="#install-create-bundle" title="Flatpak (Linux)">
-    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A" alt="Flatpak (Linux)">
-  </a>
+GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) · [Install/Create Bundle](#install-create-bundle) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
 </div>
-
-<br/>
 
 ## Clone Repo?
 1. Make sure git is installed.
