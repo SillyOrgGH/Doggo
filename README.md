@@ -7,7 +7,7 @@
 [![License: GPL-3.0-or-later](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/GPLv3OrLaterBadge.svg)](https://codeberg.org/SOrg/DogQt/src/branch/main/LICENSE)
 [![Flatpak (Linux)](https://img.shields.io/static/v1?message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A)](#install-create-bundle)
 
-<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/DogGTKQT-Whatever.svg" width="120" height="120" align="left">
+<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
 
 # Dog (GTK)
 GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) · [Install/Create Bundle](#install-create-bundle) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
