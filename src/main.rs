@@ -1,6 +1,6 @@
 /* main.rs
  *
- * Copyright 2023 User
+ * Copyright 2023 SOrg, 2023 sungsphinx
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
