@@ -21,13 +21,13 @@
 	</screenshots>
 	<releases>
 		<release version="1.0.0" date="2023-11-14" type="stable">
-		<h1>This marks the 1st (and maybe only) release of this totally not useless "app" (sarcasm for people who don't get jokes)</h1>
+		<h2>This marks the 1st (and maybe only) release of this totally not useless "app" (sarcasm for people who don't get jokes)</h2>
 		<h2>Some features/changes are:</h2>
 		<ul>
-		<li>Rust codebase</li>
-		<li>New app icon</li>
+		<li>A Rust codebase</li>
+		<li>A new app icon</li>
 		<li>...uhh uhhmmmm uh what else...</li>
-		<li>More family friendly: Abandon (dog) button no longer has a middle finger as an icon (it is now a ghost)</li>
+		<li>More family friendly: The abandon button no longer has a middle finger as an icon (it is now a ghost)</li>
 		</ul>
 		</release>
 	</releases>
