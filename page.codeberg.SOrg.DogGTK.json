@@ -39,7 +39,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/user/Projects"
+                    "url" : "https://codeberg.org/SOrg/DogGTK.git"
                 }
             ]
         }
