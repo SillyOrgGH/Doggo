@@ -3,14 +3,14 @@
 > <br/>**DogGTK as of now is in maintenance mode.**
 -->
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
-[![Please don't upload to GitHub](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/NoGitHubBadgeORIGINAL.svg)](https://nogithub.codeberg.page)
+[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![License: GPL-3.0-or-later](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/GPLv3OrLaterBadge.svg)](https://codeberg.org/SOrg/DogQt/src/branch/main/LICENSE)
 [![Flatpak (Linux)](https://img.shields.io/static/v1?message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A)](#install-create-bundle)
 
 <img style="vertical-align: middle;" src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
 
 # Dog (GTK)
-GTK4 + Libadwaita minimal demo, with a Dog.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) · [Install/Create Bundle](#install-create-bundle) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
+GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) · [Install/Create Bundle](#install-create-bundle) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
 </div>
 
 ## Clone Repo?
@@ -19,10 +19,8 @@ GTK4 + Libadwaita minimal demo, with a Dog.</br>[SOrg Website](https://sorg.code
 
 ## Install/Create Bundle
 
-[![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
-
 > **Note**
-> Dog (GTK) is not currently on Flathub, it might be soon though :smile:
+> We only (officialy) support Flatpak, please report bugs to third-party packagers first (if any :rofl:).
 
 1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 

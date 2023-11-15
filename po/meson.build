@@ -1,1 +1,1 @@
-i18n.gettext('doggtk', preset: 'glib')
+i18n.gettext('dog', preset: 'glib')

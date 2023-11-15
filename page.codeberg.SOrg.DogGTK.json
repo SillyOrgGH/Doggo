@@ -3,26 +3,13 @@
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
-    "sdk-extensions" : [
-        "org.freedesktop.Sdk.Extension.rust-stable"
-    ],
-    "command" : "doggtk",
+    "command" : "dog",
     "finish-args" : [
-        "--socket=wayland",
-        "--socket=fallback-x11",
         "--share=ipc",
-        "--device=dri"
+        "--socket=fallback-x11",
+        "--device=dri",
+        "--socket=wayland"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin",
-        "build-args": [
-            "--share=network"
-        ],
-        "env" : {
-            "RUST_BACKTRACE" : "1",
-            "RUST_LOG" : "doggtk=debug"
-        }
-    },
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
@@ -36,14 +23,14 @@
     ],
     "modules" : [
         {
-            "name" : "doggtk",
+            "name" : "dog",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "git",
                     "url" : "https://codeberg.org/SOrg/DogGTK.git",
-                    "branch" : "main"
+                    "tag" : "1.0.0-norust"
                 }
             ]
         }
