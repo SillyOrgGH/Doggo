@@ -82,10 +82,10 @@ dog_application_about_action (GSimpleAction *action,
 	window = gtk_application_get_active_window (GTK_APPLICATION (self));
 
 	adw_show_about_window (window,
-	                       "application-name", "Dog",
+	                       "application-name", "Dog (GTK)",
 	                       "application-icon", "page.codeberg.SOrg.DogGTK",
 	                       "developer-name", "SOrg & Contributors",
-	                       "version", "1.0",
+	                       "version", "1.0.0",
 	                       "developers", developers,
                                "artists", artists,
 	                       "copyright", "© 2023 SOrg",
