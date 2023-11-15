@@ -34,7 +34,7 @@ main (int   argc,
 	bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
-	g_set_application_name (_("Dog"));
+	g_set_application_name (_("Dog (GTK)"));
 
 	app = dog_application_new ("page.codeberg.SOrg.DogGTK", G_APPLICATION_DEFAULT_FLAGS);
 	ret = g_application_run (G_APPLICATION (app), argc, argv);
