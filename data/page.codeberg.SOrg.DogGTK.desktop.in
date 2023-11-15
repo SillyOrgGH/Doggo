@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Dog
-Comment=GTK4 + LibAdwaita test. With a Dog.
+Name=Dog (GTK)
+Comment=A GTK4 + Libadwaita minimal, silly and useless demo... with a dog.
 Exec=dog
 Icon=page.codeberg.SOrg.DogGTK
 Terminal=false
