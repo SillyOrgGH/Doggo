@@ -19,8 +19,10 @@ GTK4 + Libadwaita minimal demo, with a Dog.</br>[SOrg Website](https://sorg.code
 
 ## Install/Create Bundle
 
+[![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
+
 > **Note**
-> We only (officialy) support Flatpak, please report bugs to third-party packagers first (if any :rofl:).
+> Dog (GTK) is not currently on Flathub, it might be soon though :smile:
 
 1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 
