@@ -22,7 +22,7 @@
 	<releases>
 		<release version="1.0.0" date="2023-11-14" type="stable">
 		<h2>This marks the 1st (and maybe only) release of this totally not useless "app" (sarcasm for people who don't get jokes)</h2>
-		<h3>(Rust codebase has been reverted, I (sungsphinx) suck at rust coding)
+		<h3>(Rust codebase has been reverted, I (sungsphinx) suck at rust coding)</h3>
 		<h2>Some features/changes are:</h2>
 		<ul>
 		<li>A new app icon</li>
