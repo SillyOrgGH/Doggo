@@ -19,12 +19,12 @@ GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg We
 
 ## Install/Create Bundle
 
-### Install Bundle (via Flathub)
+### Install (via Flathub)
 
 [![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
 
 > **Note**
-> Dog (GTK) is not currently on Flathub, but we have been accepted into being on there :smile:
+> Dog (GTK) is not currently on Flathub, but it might be soon :smile:
 
 ### Install and Create Bundle Manually
 
