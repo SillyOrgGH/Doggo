@@ -10,14 +10,14 @@
 <img style="vertical-align: middle;" src="https://codeberg.org/SOrg/DogGTK/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
 
 # Dog (GTK)
-GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) · [Install/Create Bundle](#install-create-bundle) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
+GTK4 + Libadwaita minimal demo, with a Dog.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/DogGTK/issues) · [Install/Create Bundle](#install) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/DogGTK/raw/branch/main/src/images/bjrunoada.jpg)
 </div>
 
 ## Clone Repo?
 1. Make sure git is installed.
 2. Run ```git clone https://codeberg.org/SOrg/DogGTK.git``` in the directory you want to clone this repo to.
 
-## Install/Create Bundle
+## Install
 
 ### Install (via Flathub)
 
@@ -26,7 +26,7 @@ GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg We
 > **Note**
 > Dog (GTK) is not currently on Flathub, but it might be soon :smile:
 
-### Install and Create Bundle Manually
+### Install (Manually)
 
 1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 
