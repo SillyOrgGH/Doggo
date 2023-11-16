@@ -17,7 +17,9 @@ GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg We
 1. Make sure git is installed.
 2. Run ```git clone https://codeberg.org/SOrg/DogGTK.git``` in the directory you want to clone this repo to.
 
-## Install Bundle
+## Install/Create Bundle
+
+### Install bundle via Flathub
 
 [![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
 
