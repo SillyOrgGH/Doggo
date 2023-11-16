@@ -24,7 +24,7 @@ GTK4 + Libadwaita test, with a Dog which likes the GPL-3.0 license.</br>[SOrg We
 > **Note**
 > Dog (GTK) is not currently on Flathub, but we have been accepted into being on there :smile:
 
-# Create Bundle
+### Create Bundle
 
 1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 
