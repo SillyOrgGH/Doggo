@@ -55,7 +55,6 @@ dog_application_activate (GApplication *app)
 		window = g_object_new (DOG_TYPE_WINDOW,
 		                       "application", app,
 		                       NULL);
-
 	gtk_window_present (window);
 }
 
@@ -87,15 +86,13 @@ dog_application_about_action (GSimpleAction *action,
 	                       "developer-name", "SOrg & Contributors",
 	                       "version", "1.0.0",
 	                       "developers", developers,
-                           "artists", artists,
+                               "artists", artists,
 	                       "copyright", "© 2023 SOrg",
-                           "website", "https://sorg.codeberg.page/DogGTK",
-                           "issue-url", "https://codeberg.org/SOrg/DogGTK/issues",
+                               "website", "https://sorg.codeberg.page/DogGTK",
+                               "issue-url", "https://codeberg.org/SOrg/DogGTK/issues",
 	                       NULL);
 
 }
-
-
 
 static void
 dog_application_quit_action (GSimpleAction *action,
@@ -109,9 +106,60 @@ dog_application_quit_action (GSimpleAction *action,
 	g_application_quit (G_APPLICATION (self));
 }
 
+static void
+dog_application_abandon_action (GSimpleAction *action,
+                     GVariant      *parameter,
+                     gpointer       user_data)
+{
+  GtkWidget *dialog;
+	DogApplication *self = user_data;
+	GtkWindow *window = NULL;
+
+	g_assert (DOG_IS_APPLICATION (self));
+
+	window = gtk_application_get_active_window (GTK_APPLICATION (self));
+
+        const char *heading = "Dog Was Abandoned";
+        const char *body = "You abandoned your dog, not nice.\n(The app will now close)";
+
+	dialog = adw_message_dialog_new (window, heading, body);
+        adw_message_dialog_add_responses (ADW_MESSAGE_DIALOG (dialog),
+                                          "close", ("Close"),
+                                          NULL);
+        adw_message_dialog_set_response_appearance (ADW_MESSAGE_DIALOG (dialog), "close", ADW_RESPONSE_DESTRUCTIVE);
+        g_signal_connect (dialog, "response", G_CALLBACK (dog_application_quit_action), self);
+        gtk_window_present (GTK_WINDOW (dialog));
+}
+
+static void
+dog_application_pet_action (GSimpleAction *action,
+                     GVariant      *parameter,
+                     gpointer       user_data)
+{
+  GtkWidget *dialog;
+	DogApplication *self = user_data;
+	GtkWindow *window = NULL;
+
+	g_assert (DOG_IS_APPLICATION (self));
+
+	window = gtk_application_get_active_window (GTK_APPLICATION (self));
+
+        const char *heading = "Dog Was Pet";
+        const char *body = "Your dog liked it.\nWoof woof!";
+
+	dialog = adw_message_dialog_new (window, heading, body);
+        adw_message_dialog_add_responses (ADW_MESSAGE_DIALOG (dialog),
+                                          "close", ("Close"),
+                                          NULL);
+        //g_signal_connect (dialog, "response", G_CALLBACK (dog_application_quit_action), self);
+        gtk_window_present (GTK_WINDOW (dialog));
+}
+
 static const GActionEntry app_actions[] = {
 	{ "quit", dog_application_quit_action },
 	{ "about", dog_application_about_action },
+	{ "abandon", dog_application_abandon_action },
+	{ "pet", dog_application_pet_action },
 };
 
 static void

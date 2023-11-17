@@ -20,7 +20,17 @@
 		</screenshot>
 	</screenshots>
 	<releases>
-		<release version="1.0.0" date="2023-11-14" type="stable">
+		<release version="2.0" date="2023-11-17" type="stable">
+		<h2>Ok so this app can actually do something now</h2>
+		<h3>Pls Flathub devs accept this pwetty pwease</h3>
+		<h2>Some features/changes are:</h2>
+		<ul>
+		<li>Add abandon and pet dog functions</li>
+		<li>Add screenshots to showcase them</li>
+		<li>Prettify some of the code</li>
+		</ul>
+		</release>
+		<release version="1.0" date="2023-11-14" type="stable">
 		<h2>This marks the 1st (and maybe only) release of this totally not useless "app" (sarcasm for people who don't get jokes)</h2>
 		<h3>(Rust codebase has been reverted, I (sungsphinx) suck at rust coding)</h3>
 		<h2>Some features/changes are:</h2>
