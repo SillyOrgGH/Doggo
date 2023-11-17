@@ -58,12 +58,6 @@ dog_application_activate (GApplication *app)
 	gtk_window_present (window);
 }
 
-void quit_app (GtkWidget* widget, gpointer data)
-{
-    g_application_quit(G_APPLICATION(data));
-}
-
-
 static void
 dog_application_class_init (DogApplicationClass *klass)
 {
