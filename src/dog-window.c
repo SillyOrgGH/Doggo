@@ -27,8 +27,8 @@ struct _DogWindow
 	AdwApplicationWindow  parent_instance;
 
 	/* Template widgets */
-	GtkHeaderBar        *header_bar;
-	GtkLabel            *label;
+	AdwHeaderBar        *header_bar;
+	//GtkLabel            *label;
 };
 
 G_DEFINE_FINAL_TYPE (DogWindow, dog_window, ADW_TYPE_APPLICATION_WINDOW)
@@ -40,7 +40,7 @@ dog_window_class_init (DogWindowClass *klass)
 
 	gtk_widget_class_set_template_from_resource (widget_class, "/page/codeberg/SOrg/DogGTK/dog-window.ui");
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, header_bar);
-	gtk_widget_class_bind_template_child (widget_class, DogWindow, label);
+	//gtk_widget_class_bind_template_child (widget_class, DogWindow, label);
 }
 
 static void
