@@ -72,7 +72,7 @@ dog_application_about_action (GSimpleAction *action,
                               gpointer       user_data)
 {
 	static const char *developers[] = {"sungsphinx", NULL};
-	static const char *artists[] = {"Google (Noto Color Emoji: Dog (Used partly in the app logo))", NULL};
+	static const char *artists[] = {"Google (Noto Color Emoji: Dog, used partly in the app logo)", NULL};
 	DogApplication *self = user_data;
 	GtkWindow *window = NULL;
 
@@ -86,10 +86,10 @@ dog_application_about_action (GSimpleAction *action,
 	                       "developer-name", "SOrg & Contributors",
 	                       "version", "2.0",
 	                       "developers", developers,
-                               "artists", artists,
+                           "artists", artists,
 	                       "copyright", "© 2023 SOrg",
-                               "website", "https://sorg.codeberg.page/DogGTK",
-                               "issue-url", "https://codeberg.org/SOrg/DogGTK/issues",
+                           "website", "https://sorg.codeberg.page/DogGTK",
+                           "issue-url", "https://codeberg.org/SOrg/DogGTK/issues",
 	                       NULL);
 
 }
