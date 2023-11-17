@@ -18,6 +18,14 @@
 			<caption>Dog (GTK) Window</caption>
 			<image type="source" width="722" height="722">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-1-window.png</image>
 		</screenshot>
+		<screenshot>
+			<caption>You pet the dog dialog</caption>
+			<image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-2-pet.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>You abandoned the dog dialog</caption>
+			<image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
+		</screenshot>
 	</screenshots>
 	<releases>
 		<release version="2.0" date="2023-11-17" type="stable">
