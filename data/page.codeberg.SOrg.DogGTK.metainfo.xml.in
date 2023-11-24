@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>page.codeberg.SOrg.DogGTK</id>
   <name>Dog (GTK)</name>
-  <summary>TK4/Libadwaita minimal, silly and useless demo with a dog</summary>
+  <summary>GTK4/Libadwaita minimal, silly and useless demo with a dog</summary>
   <developer id="sorg.codeberg.page">
     <name translatable="no">SOrg, sungsphinx &amp; Contributors</name>
   </developer>
