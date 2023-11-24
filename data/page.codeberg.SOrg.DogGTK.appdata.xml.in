@@ -14,19 +14,30 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <caption>Dog (GTK) Window</caption>
+      <caption>Main Window</caption>
       <image type="source" width="722" height="722">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-1-window.png</image>
     </screenshot>
     <screenshot>
-      <caption>You pet the dog dialog</caption>
+      <caption>Pet Dialog</caption>
       <image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-2-pet.png</image>
     </screenshot>
     <screenshot>
-      <caption>You abandoned the dog dialog</caption>
+      <caption>Abandoned Dialog</caption>
       <image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.1" date="2023-11-24" type="stable">
+      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.1</url>
+      <description>
+        <ul>
+          <li>Appdata/Metainfo now shows release notes properly</li>
+          <li>Part of appdata/metainfo name changed from `*.metainfo.xml` to `*.appdata.xml` (Not noticable for normal user)</li>
+          <li>Migrated from using `appstream-util` to `appstreamcli/libappstream`</li>
+          <li>Small changes/improvements to screenshot captions</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1-rc1" date="2023-11-24" type="development">
       <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.1-rc1</url>
     </release>
@@ -38,7 +49,6 @@
           <li>Screenshots to showcase the functionality</li>
           <li>Prettify some code (not noticable on the app)</li>
         </ul>
-        <p>(Pls Flathub devs accept this pwetty pwease)</p>
       </description>
     </release>
     <release version="1.0" date="2023-11-14" type="stable">
