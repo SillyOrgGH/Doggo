@@ -1,53 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-	<id>page.codeberg.SOrg.DogGTK</id>
-	<name>Dog (GTK)</name>
-	<developer_name>SOrg, sungsphinx &amp; Contributors</developer_name>
-	<metadata_license>CC0-1.0</metadata_license>
-	<launchable type="desktop-id">page.codeberg.SOrg.DogGTK.desktop</launchable>
-	<summary>A GTK4 + Libadwaita minimal, silly and useless demo... with a dog.</summary>
-	<url type="homepage">https://sorg.codeberg.page/DogGTK</url>
-	<url type="vcs-browser">https://codeberg.org/SOrg/DogGTK</url>
-	<url type="bugtracker">https://codeberg.org/SOrg/DogGTK/issues</url>
-	<project_license>GPL-3.0-or-later</project_license>
-	<description>
-	  <p>GTK4 + Libadwaita minimal, silly and useless demo + A Dog which likes the GPL-3.0 license.</p>
-	</description>
-	<screenshots>
-		<screenshot type="default">
-			<caption>Dog (GTK) Window</caption>
-			<image type="source" width="722" height="722">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-1-window.png</image>
-		</screenshot>
-		<screenshot>
-			<caption>You pet the dog dialog</caption>
-			<image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-2-pet.png</image>
-		</screenshot>
-		<screenshot>
-			<caption>You abandoned the dog dialog</caption>
-			<image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
-		</screenshot>
-	</screenshots>
-	<releases>
-		<release version="2.0" date="2023-11-17" type="stable">
-		<h2>Ok so this app can actually do something now</h2>
-		<h3>Pls Flathub devs accept this pwetty pwease</h3>
-		<h2>Some features/changes are:</h2>
-		<ul>
-		<li>Add abandon and pet dog functions</li>
-		<li>Add screenshots to showcase them</li>
-		<li>Prettify some of the code</li>
-		</ul>
-		</release>
-		<release version="1.0" date="2023-11-14" type="stable">
-		<h2>This marks the 1st (and maybe only) release of this totally not useless "app" (sarcasm for people who don't get jokes)</h2>
-		<h3>(Rust codebase has been reverted, I (sungsphinx) suck at rust coding)</h3>
-		<h2>Some features/changes are:</h2>
-		<ul>
-		<li>A new app icon</li>
-		<li>...uhh uhhmmmm uh what else...</li>
-		<li>More family friendly: The abandon button no longer has a middle finger as an icon (it is now a ghost)</li>
-		</ul>
-		</release>
-	</releases>
-	<content_rating type="oars-1.1" />
+  <id>page.codeberg.SOrg.DogGTK</id>
+  <name>Dog (GTK)</name>
+  <summary>TK4/Libadwaita minimal, silly and useless demo with a dog</summary>
+  <developer id="sorg.codeberg.page">
+    <name translatable="no">SOrg, sungsphinx &amp; Contributors</name>
+  </developer>
+  <launchable type="desktop-id">page.codeberg.SOrg.DogGTK.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>GTK4 + Libadwaita minimal, silly and useless demo + A Dog which likes the GPL-3.0 license.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Dog (GTK) Window</caption>
+      <image type="source" width="722" height="722">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-1-window.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>You pet the dog dialog</caption>
+      <image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-2-pet.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>You abandoned the dog dialog</caption>
+      <image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="2.0" date="2023-11-17" type="stable">
+      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.0</url>
+      <description>
+        <ul>
+          <li>Pet &amp; Abandon functions</li>
+          <li>Screenshots to showcase the functionality</li>
+          <li>Prettify some code (not noticable on the app)</li>
+        </ul>
+        <p>(Pls Flathub devs accept this pwetty pwease)</p>
+      </description>
+    </release>
+    <release version="1.0" date="2023-11-14" type="stable">
+      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/1.0.0-norust</url>
+      <description>
+        <ul>
+          <li>New App Icon</li>
+          <li>More Family Friendly (No middle finger icon for abandon button)</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <url type="homepage">https://sorg.codeberg.page/DogGTK</url>
+  <url type="bugtracker">https://codeberg.org/SOrg/DogGTK/issues</url>
+  <url type="vcs-browser">https://codeberg.org/SOrg/DogGTK</url>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>tablet</control>
+    <control>touch</control>
+  </supports>
+  <content_rating type="oars-1.1"/>
 </component>
