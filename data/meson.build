@@ -13,11 +13,11 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'page.codeberg.SOrg.DogGTK.metainfo.xml.in',
-       output: 'page.codeberg.SOrg.DogGTK.metainfo.xml',
+        input: 'page.codeberg.SOrg.DogGTK.appdata.xml.in',
+       output: 'page.codeberg.SOrg.DogGTK.appdata.xml',
        po_dir: '../po',
       install: true,
-  install_dir: join_paths(get_option('datadir'), 'metainfo')
+  install_dir: join_paths(get_option('datadir'), 'appdata')
 )
 
 appstreamcli = find_program('appstreamcli', required: false)
