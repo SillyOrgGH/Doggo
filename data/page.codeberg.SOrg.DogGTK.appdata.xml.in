@@ -30,7 +30,7 @@
       <description>
         <ul>
           <li>Appdata/Metainfo now shows release notes properly</li>
-          <li>Part of appdata/metainfo name changed from `*.metainfo.xml` to `*.appdata.xml` (Not noticable for normal user)</li>
+          <li>Part of the appdata/metainfo name changed from `*.metainfo.xml` to `*.appdata.xml` (Not noticable for normal user)</li>
           <li>Migrated from using `appstream-util` to `appstreamcli/libappstream`</li>
           <li>Small changes/improvements to screenshot captions</li>
         </ul>
