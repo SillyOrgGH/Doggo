@@ -25,6 +25,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.2" date="2023-11-26" type="stable">
+      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.2</url>
+      <description>
+        <ul>
+          <li>New Application Icon (Follows the GNOME HIG much more now... for no reason...)</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.1" date="2023-11-24" type="stable">
       <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.1</url>
       <description>
