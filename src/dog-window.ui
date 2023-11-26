@@ -27,7 +27,7 @@
             <property name="visible-child-name">home_page</property>
             <child>
               <object class="AdwStatusPage" id="home_page">
-                <property name="icon-name">dog-svg</property>
+                <property name="icon-name">page.codeberg.SOrg.DogGTK</property>
                 <property name="title">Diggity Dawg spotted</property>
                 <property name="description">Look after this dog, I can't be bothered</property>
                 <property name="vexpand">true</property>
