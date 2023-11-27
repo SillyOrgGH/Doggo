@@ -35,9 +35,11 @@ dog_application_new (GApplicationFlags  flags)
 
 	return g_object_new (DOG_TYPE_APPLICATION,
 	                     "application-id", APPLICATION_ID,
-	                     "flags", flags,
+	                     "flags", G_APPLICATION_DEFAULT_FLAGS,
+	                     "resource-base-path", "/page/codeberg/SOrg/DogGTK",
 	                     NULL);
 }
+
 
 static void
 dog_application_activate (GApplication *app)
