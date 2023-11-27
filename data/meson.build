@@ -3,9 +3,9 @@ desktop_conf.set('icon', application_id)
 desktop_file = i18n.merge_file(
           input: configure_file(
             input: files('page.codeberg.SOrg.DogGTK.desktop.in'),
-            output: '@0@.desktop'.format(application_id),
             configuration: desktop_conf,
           ),
+          output: '@0@.desktop'.format(application_id),
          type: 'desktop',
        po_dir: '../po',
       install: true,
