@@ -47,4 +47,7 @@ static void
 dog_window_init (DogWindow *self)
 {
 	gtk_widget_init_template (GTK_WIDGET (self));
+	if (g_strcmp0 (PROFILE, "development") == 0)
+	gtk_widget_add_css_class (GTK_WIDGET (self), "devel");
+
 }
