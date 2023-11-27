@@ -21,7 +21,11 @@ endif
 appdata_conf = configuration_data()
 appdata_conf.set('appid', application_id)
 appstream_file = i18n.merge_file(
-        input: files('page.codeberg.SOrg.DogGTK.appdata.xml.in'),
+        input: configure_file(
+          input: files('page.codeberg.SOrg.DogGTK.appdata.xml.in.in'),
+          output: 'page.codeberg.SOrg.DogGTK.appdata.xml.in',
+          configuration: appdata_conf
+        ),
         output: '@0@.appdata.xml'.format(application_id),
        po_dir: '../po',
       install: true,
