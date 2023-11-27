@@ -1,10 +1,18 @@
 desktop_file = i18n.merge_file(
-        input: 'page.codeberg.SOrg.DogGTK.desktop.in',
-       output: 'page.codeberg.SOrg.DogGTK.desktop',
+          input: configure_file(
+            input: files('page.codeberg.SOrg.DogGTK.desktop.in.in'),
+            output: 'page.codeberg.SOrg.DogGTK.desktop.in',
+            configuration: desktop_conf,
+          ),
+          output: '@0@.desktop'.format(application_id),
          type: 'desktop',
        po_dir: '../po',
       install: true,
-  install_dir: join_paths(get_option('datadir'), 'applications')
+  install_dir: get_option('datadir') / 'applications',
+)
+
+desktop_file = i18n.merge_file(
+
 )
 
 desktop_utils = find_program('desktop-file-validate', required: false)
@@ -12,12 +20,18 @@ if desktop_utils.found()
   test('Validate desktop file', desktop_utils, args: [desktop_file])
 endif
 
+appdata_conf = configuration_data()
+appdata_conf.set('appid', application_id)
 appstream_file = i18n.merge_file(
-        input: 'page.codeberg.SOrg.DogGTK.appdata.xml.in',
-       output: 'page.codeberg.SOrg.DogGTK.appdata.xml',
+        input: configure_file(
+          input: files('page.codeberg.SOrg.DogGTK.appdata.xml.in.in'),
+          output: 'page.codeberg.SOrg.DogGTK.appdata.xml.in',
+          configuration: appdata_conf
+        ),
+        output: '@0@.appdata.xml'.format(application_id),
        po_dir: '../po',
       install: true,
-  install_dir: join_paths(get_option('datadir'), 'appdata')
+  install_dir: get_option('datadir') / 'appdata',
 )
 
 appstreamcli = find_program('appstreamcli', required: false)
@@ -26,7 +40,7 @@ if appstreamcli.found()
 endif
 
 install_data('page.codeberg.SOrg.DogGTK.gschema.xml',
-  install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
+  install_dir: get_option('datadir') / 'glib-2.0/schemas',
 )
 
 compile_schemas = find_program('glib-compile-schemas', required: false)
