@@ -19,7 +19,6 @@
  */
 
 #include "config.h"
-
 #include "dog-application.h"
 #include "dog-window.h"
 
@@ -84,7 +83,7 @@ dog_application_about_action (GSimpleAction *action,
 	                       "application-name", "Dog (GTK)",
 	                       "application-icon", "page.codeberg.SOrg.DogGTK",
 	                       "developer-name", "SOrg & Contributors",
-	                       "version", "2.2",
+	                       "version", PACKAGE_VERSION,
 	                       "developers", developers,
                            "artists", artists,
 	                       "copyright", "© 2023 SOrg",
