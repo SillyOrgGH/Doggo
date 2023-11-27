@@ -30,13 +30,11 @@ struct _DogApplication
 G_DEFINE_TYPE (DogApplication, dog_application, ADW_TYPE_APPLICATION)
 
 DogApplication *
-dog_application_new (const char        *application_id,
-                     GApplicationFlags  flags)
+dog_application_new (GApplicationFlags  flags)
 {
-	g_return_val_if_fail (application_id != NULL, NULL);
 
 	return g_object_new (DOG_TYPE_APPLICATION,
-	                     "application-id", application_id,
+	                     "application-id", APPLICATION_ID,
 	                     "flags", flags,
 	                     NULL);
 }
