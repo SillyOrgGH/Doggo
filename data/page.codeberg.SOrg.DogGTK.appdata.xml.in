@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-  <id>@application_id@</id>
+  <id>@appid@</id>
   <name>Dog (GTK)</name>
   <summary>GTK4/Libadwaita minimal, silly and useless demo with a dog</summary>
   <developer_name translatable="no">SOrg, sungsphinx &amp; Contributors</developer_name>
