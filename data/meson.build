@@ -1,5 +1,5 @@
 desktop_conf = configuration_data()
-desktop_conf.set('icon', application_id)
+desktop_conf.set('appid', application_id)
 desktop_file = i18n.merge_file(
           input: configure_file(
             input: files('page.codeberg.SOrg.DogGTK.desktop.in.in'),
