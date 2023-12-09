@@ -1,14 +1,16 @@
 {
-    "app-id" : "page.codeberg.SOrg.DogGTK",
+    "app-id" : "page.codeberg.SOrg.DogGTK.Devel",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
     "command" : "dog",
+    "desktop-file-name-suffix" : " (Nightly)",
+    "tags": ["nightly"],
     "finish-args" : [
-        "--share=ipc",
+        "--socket=wayland",
         "--socket=fallback-x11",
         "--device=dri",
-        "--socket=wayland"
+        "--share=ipc"
     ],
     "cleanup" : [
         "/include",
@@ -22,15 +24,28 @@
         "*.a"
     ],
     "modules" : [
+	{
+            "name": "blueprint-compiler",
+            "buildsystem": "meson",
+            "cleanup": ["*"],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+                    "tag": "v0.10.0"
+                }
+            ]
+	},
         {
             "name" : "dog",
             "builddir" : true,
             "buildsystem" : "meson",
+            "config-opts" : ["-Dprofile=development"],
             "sources" : [
                 {
                     "type" : "git",
                     "url" : "https://codeberg.org/SOrg/DogGTK.git",
-                    "tag" : "2.2"
+                    "branch" : "main"
                 }
             ]
         }

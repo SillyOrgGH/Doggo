@@ -1,30 +1,46 @@
 project('dog', 'c',
           license: 'GPL3+',
-          version: '2.2',
+          version: '3.0',
     meson_version: '>= 0.62.0',
   default_options: [ 'warning_level=2', 'werror=false', 'c_std=gnu11', ],
 )
 
 i18n = import('i18n')
 gnome = import('gnome')
+fs = import('fs')
 cc = meson.get_compiler('c')
 
-profile = get_option('profile')
-if profile == 'development'
-  find_program('git')
-  rev_txt = run_command('git','rev-parse','--short','HEAD').stdout().strip()
-  name_suffix = ' (Development)'
-  rev = '-@0@'.format(rev_txt)
-  application_id = 'page.codeberg.SOrg.DogGTK.Devel'
+if get_option('profile') == 'development'
+  profile = '.Devel'
+  if fs.is_dir('.git')
+    vcs_tag = run_command('git', 'rev-parse', '--short', 'HEAD', check: true).stdout().strip()
+    if vcs_tag == ''
+      version_suffix = '-devel'
+    else
+      version_suffix = '-@0@'.format(vcs_tag)
+    endif
+  else
+    version_suffix = '-devel'
+  endif
 else
-  name_suffix = ''
-  rev = ''
-  application_id = 'page.codeberg.SOrg.DogGTK'
+  profile = ''
+  version_suffix = ''
 endif
+
+application_id = 'page.codeberg.SOrg.DogGTK@0@'.format(profile)
+application_name = 'Doggo'
+developer_name = 'Silly Org, sungsphinx & Contributors'
+
+prefix = get_option('prefix')
+datadir = prefix / get_option('datadir')
+pkgdatadir = datadir / meson.project_name()
 
 config_h = configuration_data()
 config_h.set_quoted('APPLICATION_ID', application_id)
-config_h.set_quoted('PACKAGE_VERSION', meson.project_version())
+config_h.set_quoted('APPLICATION_NAME', application_name)
+config_h.set_quoted('DEVELOPER_NAME', developer_name)
+config_h.set_quoted('VERSION', '@0@@1@'.format(meson.project_version(), version_suffix))
+config_h.set_quoted('VERSION_NO_SUFFIX', '@0@'.format(meson.project_version()))
 config_h.set_quoted('GETTEXT_PACKAGE', 'dog')
 config_h.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 config_h.set_quoted('PROFILE', profile)

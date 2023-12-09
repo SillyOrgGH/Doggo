@@ -21,6 +21,8 @@
 #include "config.h"
 #include "dog-application.h"
 #include "dog-window.h"
+#include "dog-debug-info.h"
+#include <glib/gi18n.h>
 
 struct _DogApplication
 {
@@ -63,6 +65,8 @@ dog_application_class_init (DogApplicationClass *klass)
 {
 	GApplicationClass *app_class = G_APPLICATION_CLASS (klass);
 
+	gtk_window_set_default_icon_name (APPLICATION_ID);
+
 	app_class->activate = dog_application_activate;
 }
 
@@ -72,26 +76,55 @@ dog_application_about_action (GSimpleAction *action,
                               gpointer       user_data)
 {
 	static const char *developers[] = {"sungsphinx", NULL};
-	static const char *artists[] = {"Google (Noto Color Emoji: Dog, used partly in the app logo)", NULL};
+	static const char *artists[] = {"Google (Noto Color Emoji: Dog, base for App Icon)", "sungsphinx (App Icon)", NULL};
+	const char *special_thanks[] = {"Bruno (My Dog)", NULL};
+	const char *copyright = "© 2023 Silly Org, 2023 sungsphinx";
+
+
 	DogApplication *self = user_data;
+	char *debug_info;
+	void *about;
 	GtkWindow *window = NULL;
+
+	debug_info = dog_generate_debug_info ();
 
 	g_assert (DOG_IS_APPLICATION (self));
 
 	window = gtk_application_get_active_window (GTK_APPLICATION (self));
 
-	adw_show_about_window (window,
-	                       "application-name", "Dog (GTK)",
-	                       "application-icon", APPLICATION_ID,
-	                       "developer-name", "SOrg & Contributors",
-	                       "version", PACKAGE_VERSION,
-	                       "developers", developers,
-                           "artists", artists,
-	                       "copyright", "© 2023 SOrg",
-                           "website", "https://sorg.codeberg.page/DogGTK",
-                           "issue-url", "https://codeberg.org/SOrg/DogGTK/issues",
-	                       NULL);
+	about = adw_about_window_new_from_appdata ("/page/codeberg/SOrg/DogGTK/metainfo.xml", VERSION_NO_SUFFIX);
 
+	adw_about_window_set_version (ADW_ABOUT_WINDOW (about), VERSION);
+
+	adw_about_window_set_comments (ADW_ABOUT_WINDOW (about), "Compooter Dawg");
+
+	adw_about_window_add_link (ADW_ABOUT_WINDOW (about),
+                                    _("_Silly Org Website"),
+                              "https://sorg.codeberg.page");
+
+	adw_about_window_add_link (ADW_ABOUT_WINDOW (about),
+                                    _("_Application Source Code"),
+                              "https://codeberg.org/SOrg/Doggo");
+
+	adw_about_window_add_acknowledgement_section (ADW_ABOUT_WINDOW (about),
+                                                _("Special thanks to"),
+                                                special_thanks);
+
+	adw_about_window_set_copyright (ADW_ABOUT_WINDOW (about), copyright);
+
+	adw_about_window_set_developers (ADW_ABOUT_WINDOW (about), developers);
+
+	adw_about_window_set_artists (ADW_ABOUT_WINDOW (about), artists);
+
+	adw_about_window_set_debug_info (ADW_ABOUT_WINDOW (about), debug_info);
+
+	adw_about_window_set_debug_info_filename (ADW_ABOUT_WINDOW (about), "doggo-debug.txt");
+
+	gtk_window_set_transient_for (GTK_WINDOW (about), window);
+
+	gtk_window_set_application (GTK_WINDOW (about), GTK_APPLICATION (self));
+
+	gtk_window_present (GTK_WINDOW (about));
 }
 
 static void
@@ -106,60 +139,9 @@ dog_application_quit_action (GSimpleAction *action,
 	g_application_quit (G_APPLICATION (self));
 }
 
-static void
-dog_application_abandon_action (GSimpleAction *action,
-                     GVariant      *parameter,
-                     gpointer       user_data)
-{
-  GtkWidget *dialog;
-	DogApplication *self = user_data;
-	GtkWindow *window = NULL;
-
-	g_assert (DOG_IS_APPLICATION (self));
-
-	window = gtk_application_get_active_window (GTK_APPLICATION (self));
-
-        const char *heading = "Dog Was Abandoned";
-        const char *body = "You abandoned your dog, not nice.\n(The app will now close)";
-
-	dialog = adw_message_dialog_new (window, heading, body);
-        adw_message_dialog_add_responses (ADW_MESSAGE_DIALOG (dialog),
-                                          "close", ("Close"),
-                                          NULL);
-        adw_message_dialog_set_response_appearance (ADW_MESSAGE_DIALOG (dialog), "close", ADW_RESPONSE_DESTRUCTIVE);
-        g_signal_connect (dialog, "response", G_CALLBACK (dog_application_quit_action), self);
-        gtk_window_present (GTK_WINDOW (dialog));
-}
-
-static void
-dog_application_pet_action (GSimpleAction *action,
-                     GVariant      *parameter,
-                     gpointer       user_data)
-{
-  GtkWidget *dialog;
-	DogApplication *self = user_data;
-	GtkWindow *window = NULL;
-
-	g_assert (DOG_IS_APPLICATION (self));
-
-	window = gtk_application_get_active_window (GTK_APPLICATION (self));
-
-        const char *heading = "Dog Was Pet";
-        const char *body = "Your dog liked it.\nWoof woof!";
-
-	dialog = adw_message_dialog_new (window, heading, body);
-        adw_message_dialog_add_responses (ADW_MESSAGE_DIALOG (dialog),
-                                          "close", ("Close"),
-                                          NULL);
-        //g_signal_connect (dialog, "response", G_CALLBACK (dog_application_quit_action), self);
-        gtk_window_present (GTK_WINDOW (dialog));
-}
-
 static const GActionEntry app_actions[] = {
 	{ "quit", dog_application_quit_action },
 	{ "about", dog_application_about_action },
-	{ "abandon", dog_application_abandon_action },
-	{ "pet", dog_application_pet_action },
 };
 
 static void
@@ -172,4 +154,13 @@ dog_application_init (DogApplication *self)
 	gtk_application_set_accels_for_action (GTK_APPLICATION (self),
 	                                       "app.quit",
 	                                       (const char *[]) { "<primary>q", NULL });
+	gtk_application_set_accels_for_action (GTK_APPLICATION (self),
+	                                       "win.pet",
+	                                       (const char *[]) { "<primary>p", NULL });
+	gtk_application_set_accels_for_action (GTK_APPLICATION (self),
+	                                       "win.feed",
+	                                       (const char *[]) { "<primary>f", NULL });
+	gtk_application_set_accels_for_action (GTK_APPLICATION (self),
+	                                       "win.abandon",
+	                                       (const char *[]) { "<primary>b", NULL });
 }

@@ -1,32 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
   <id>@appid@</id>
-  <name>Dog (GTK)</name>
-  <summary>GTK4/Libadwaita minimal, silly and useless demo with a dog</summary>
-  <developer_name translatable="no">SOrg, sungsphinx &amp; Contributors</developer_name>
-  <launchable type="desktop-id">page.codeberg.SOrg.DogGTK.desktop</launchable>
+  <name>Doggo</name>
+  <summary>Compooter Dawg</summary>
+  <developer_name>Silly Org, sungsphinx &amp; Contributors</developer_name>
+  <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <description>
-    <p>GTK4 + Libadwaita minimal, silly and useless demo + A Dog which likes the GPL-3.0 license.</p>
+    <p>GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game which lets you feed, pet and... abandon your dog.</p>
   </description>
   <screenshots>
     <screenshot type="default">
       <caption>Main Window</caption>
-      <image type="source" width="722" height="722">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-1-window.png</image>
+      <image type="source" width="722" height="722">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-1-window.png</image>
     </screenshot>
     <screenshot>
       <caption>Pet Dialog</caption>
-      <image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-2-pet.png</image>
+      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-2-pet.png</image>
     </screenshot>
     <screenshot>
       <caption>Abandoned Dialog</caption>
-      <image type="source" width="422" height="290">https://codeberg.org/SOrg/DogGTK/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
+      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.0" date="2023-12-10" type="stable">
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.0</url>
+      <description>
+        <p>This marks the 3rd major version release of Doggo (Previously DogGTK).
+
+New features &amp; changes below:</p>
+        <ul>
+          <li>Using AdwNavigationView instead of AdwLeaflet</li>
+          <li>Using blueprint-compiler for building the interface</li>
+          <li>New option to feed the doggo</li>
+          <li>Shows the app icon in top left/right when GTK is configured to do so</li>
+        </ul>
+        <p>Some things may have been missed, or left out on purpose for you to find ;)</p>
+      </description>
+    </release>
     <release version="2.2" date="2023-11-26" type="stable">
-      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.2</url>
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/2.2</url>
       <description>
         <ul>
           <li>New Application Icon (Follows the GNOME HIG much more now... for no reason...)</li>
@@ -34,7 +49,7 @@
       </description>
     </release>
     <release version="2.1" date="2023-11-24" type="stable">
-      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.1</url>
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/2.1</url>
       <description>
         <ul>
           <li>Appdata/Metainfo now shows release notes properly</li>
@@ -45,10 +60,10 @@
       </description>
     </release>
     <release version="2.1~rc1" date="2023-11-24" type="development">
-      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.1-rc1</url>
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/2.1-rc1</url>
     </release>
     <release version="2.0" date="2023-11-17" type="stable">
-      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/2.0</url>
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/2.0</url>
       <description>
         <ul>
           <li>Pet &amp; Abandon functions</li>
@@ -58,7 +73,7 @@
       </description>
     </release>
     <release version="1.0" date="2023-11-14" type="stable">
-      <url>https://codeberg.org/SOrg/DogGTK/releases/tag/1.0.0-norust</url>
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/1.0.0-norust</url>
       <description>
         <ul>
           <li>New App Icon</li>
@@ -67,9 +82,9 @@
       </description>
     </release>
   </releases>
-  <url type="homepage">https://sorg.codeberg.page/DogGTK</url>
-  <url type="bugtracker">https://codeberg.org/SOrg/DogGTK/issues</url>
-  <url type="vcs-browser">https://codeberg.org/SOrg/DogGTK</url>
+  <url type="homepage">https://sorg.codeberg.page/Doggo</url>
+  <url type="bugtracker">https://codeberg.org/SOrg/Doggo/issues</url>
+  <url type="vcs-browser">https://codeberg.org/SOrg/Doggo</url>
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
@@ -79,7 +94,10 @@
   <content_rating type="oars-1.1"/>
   <keywords>
     <keyword>dog</keyword>
+    <keyword>doggo</keyword>
     <keyword>useless</keyword>
     <keyword>diggity dawg</keyword>
+    <keyword>demo</keyword>
+    <keyword>game</keyword>
   </keywords>
 </component>

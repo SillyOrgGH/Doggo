@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Dog (GTK)
-Comment=A GTK4 + Libadwaita minimal, silly and useless demo... with a dog.
+Name=Doggo
+Comment=Compooter Dawg
 Exec=dog
 Icon=@appid@
 Terminal=false

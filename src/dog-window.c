@@ -28,7 +28,10 @@ struct _DogWindow
 
 	/* Template widgets */
 	AdwHeaderBar        *header_bar;
-	//GtkLabel            *label;
+	//GtkLabel            *wooflabel;
+	GtkLabel            *title_result;
+	GtkLabel            *smalltxt;
+	AdwNavigationView   *navigationview1;
 };
 
 G_DEFINE_FINAL_TYPE (DogWindow, dog_window, ADW_TYPE_APPLICATION_WINDOW)
@@ -38,16 +41,94 @@ dog_window_class_init (DogWindowClass *klass)
 {
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
-	gtk_widget_class_set_template_from_resource (widget_class, "/page/codeberg/SOrg/DogGTK/dog-window.ui");
+	gtk_widget_class_set_template_from_resource (widget_class, "/page/codeberg/SOrg/DogGTK/window.ui");
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, header_bar);
-	//gtk_widget_class_bind_template_child (widget_class, DogWindow, label);
+	gtk_widget_class_bind_template_child (widget_class, DogWindow, navigationview1);
+}
+
+enum Choices {
+  PET,
+  FEED
+};
+
+enum Results_Pet {
+  FRIENDLY,
+  UNFRIENDLY,
+  BITE
+};
+
+enum Results_Feed {
+  ENJOY_FOOD,
+  DISLIKE_FOOD
+};
+
+static void
+display_result_pet (DogWindow *self) {
+	int result_choice = g_random_int_range (0, BITE + 1);
+
+	if (result_choice == UNFRIENDLY) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_unfriendly_page");
+	}
+
+	if (result_choice == FRIENDLY) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_friendly_page");
+	}
+
+	if (result_choice == BITE) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_bite_page");
+	}
+}
+
+static void
+display_result_feed (DogWindow *self) {
+	int result_choice = g_random_int_range (0, DISLIKE_FOOD + 1);
+
+	if (result_choice == ENJOY_FOOD) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_food_page");
+        }
+
+        if (result_choice == DISLIKE_FOOD) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_dislikefood_page");
+        }
+}
+
+static void
+register_gaction (DogWindow *self, const char *action_name, GCallback handler) {
+	GSimpleAction *action = g_simple_action_new (action_name, NULL);
+	g_signal_connect_swapped (action, "activate", handler, self);
+	g_action_map_add_action (G_ACTION_MAP (self), G_ACTION (action));
+}
+
+static void
+pet (DogWindow *self) {
+	display_result_pet (self);
+}
+
+static void
+feed (DogWindow *self) {
+	display_result_feed (self);
+}
+
+static void
+abandon (DogWindow *self) {
+	g_print ("Abandon Dog ");
+	adw_navigation_view_pop (self->navigationview1);
+	adw_navigation_view_push_by_tag (self->navigationview1, "dog_abandon_page");
 }
 
 static void
 dog_window_init (DogWindow *self)
 {
 	gtk_widget_init_template (GTK_WIDGET (self));
-	if (g_strcmp0 (PROFILE, "development") == 0)
+	if (g_strcmp0 (PROFILE, ".Devel") == 0)
 	gtk_widget_add_css_class (GTK_WIDGET (self), "devel");
-
+	register_gaction (self, "pet", G_CALLBACK(pet));
+	register_gaction (self, "feed", G_CALLBACK(feed));
+	register_gaction (self, "abandon", G_CALLBACK(abandon));
 }
+

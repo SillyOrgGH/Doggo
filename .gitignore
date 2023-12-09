@@ -6,3 +6,4 @@ builddir
 repo
 install
 *.flatpak
+/subprojects/blueprint-compiler

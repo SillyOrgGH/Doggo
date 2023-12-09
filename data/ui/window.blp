@@ -1,0 +1,370 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $DogWindow : Adw.ApplicationWindow {
+  default-width: 600;
+  default-height: 600;
+  content:
+  Adw.ToolbarView {
+    content:
+
+    Adw.NavigationView navigationview1 {
+      Adw.NavigationPage dog_home_page {
+        tag: "home_page";
+        title: "Home";
+        vexpand: true;
+        hexpand: true;
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog";
+                pixel-size: 196;
+                margin-bottom: 10;
+                styles ["icon-dropshadow"]
+              }
+
+              Label title {
+                label: "Doggo";
+                margin-bottom: 15;
+                styles ["title-1"]
+              }
+
+              Label {
+                label: "Choose A Path Below";
+                margin-bottom: 20;
+              }
+
+              Button petbutton {
+                action-name: "win.pet";
+                child: Adw.ButtonContent {
+                  label: "Pet the Doggo";
+                  icon-name: "dog-symbolic";
+                  halign: center;
+                };
+                margin-bottom: 15;
+                styles ["pill", "petbutton", "opaque"]
+              }
+
+              Button feedbutton {
+                action-name: "win.feed";
+                child: Adw.ButtonContent {
+                  label: "Feed the Doggo";
+                  icon-name: "food-sausage";
+                  halign: center;
+                };
+                margin-bottom: 15;
+                styles ["pill", "feedbutton", "opaque"]
+              }
+
+              Button abandonbutton {
+                action-name: "win.abandon";
+                child: Adw.ButtonContent {
+                  label: "Abandon the Doggo";
+                  icon-name: "ghost";
+                  halign: center;
+                };
+                margin-bottom: 15;
+                styles ["pill", "abandonbutton", "opaque"]
+              }
+            };
+          };
+        };
+      }
+      Adw.NavigationPage dog_unfriendly_page {
+        title: "Doggo Is Unfriendly";
+        tag: "dog_unfriendly_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar_unfriendly {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-angry";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "GRRRRRR...";
+                margin-bottom: 15;
+                styles ["title-1", "UnfriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo isn't very friendly right now.";
+                margin-bottom: 20;
+                styles ["title-4", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+      Adw.NavigationPage dog_friendly_page {
+        title: "Doggo Is Friendly";
+        tag: "dog_friendly_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar_friendly {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label title-friendly {
+                label: "Woof Woof!";
+                margin-bottom: 15;
+                styles ["title-1", "FriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo is friendly right now.";
+                margin-bottom: 20;
+                styles ["title-4", "FriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_bite_page {
+        title: "Doggo Bit You";
+        tag: "dog_bite_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-angry";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "BITE!";
+                margin-bottom: 15;
+                styles ["title-1", "UnfriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo bit you!!";
+                margin-bottom: 20;
+                styles ["title-4", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_food_page {
+        title: "Doggo Likes The Food";
+        tag: "dog_food_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar_eating {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "Woof Woof!";
+                margin-bottom: 15;
+                styles ["title-1", "FriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo likes the food";
+                margin-bottom: 15;
+                styles ["title-4", "FriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_dislikefood_page {
+        title: "Doggo Dislikes The Food";
+        tag: "dog_dislikefood_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar_dislikefood {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-angry";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "GRR.. WOOF";
+                margin-bottom: 15;
+                styles ["title-1", "UnfriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo does not like the food";
+                margin-bottom: 15;
+                styles ["title-4", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_abandon_page {
+        title: "Doggo Abandoned";
+        tag: "dog_abandon_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-scared";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "You abandoned the Doggo";
+                margin-bottom: 15;
+                styles ["title-1", "UnfriendlyText"]
+              }
+
+              Label {
+                label: "How could you...";
+                margin-bottom: 20;
+                styles ["title-4", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+    };
+
+  }
+
+  ;
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("_Keyboard Shortcuts");
+      action: "win.show-help-overlay";
+    }
+
+    item {
+      label: _("_About Doggo");
+      action: "app.about";
+    }
+  }
+}
