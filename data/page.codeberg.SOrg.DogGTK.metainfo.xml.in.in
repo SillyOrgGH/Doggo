@@ -13,15 +13,15 @@
   <screenshots>
     <screenshot type="default">
       <caption>Main Window</caption>
-      <image type="source" width="722" height="722">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-1-window.png</image>
+      <image type="source" width="722" height="722">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-1</image>
     </screenshot>
     <screenshot>
       <caption>Pet Dialog</caption>
-      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-2-pet.png</image>
+      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-2</image>
     </screenshot>
     <screenshot>
       <caption>Abandoned Dialog</caption>
-      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-3-abandon.png</image>
+      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-3.png</image>
     </screenshot>
   </screenshots>
   <releases>
