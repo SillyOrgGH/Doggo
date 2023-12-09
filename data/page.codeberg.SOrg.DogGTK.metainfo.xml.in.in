@@ -16,11 +16,11 @@
       <image type="source" width="722" height="722">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-1</image>
     </screenshot>
     <screenshot>
-      <caption>Pet Dialog</caption>
+      <caption>Dog Is Friendly Page</caption>
       <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-2</image>
     </screenshot>
     <screenshot>
-      <caption>Abandoned Dialog</caption>
+      <caption>Dog Is Unfriendly Page</caption>
       <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/screenshots/screenshot-3.png</image>
     </screenshot>
   </screenshots>
