@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>@appid@</id>
   <name>Doggo</name>
-  <summary>Compooter Dawg</summary>
+  <summary>GTK4 + Libadwaita Game themed around a dog</summary>
   <developer_name>Silly Org, sungsphinx &amp; Contributors</developer_name>
   <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
