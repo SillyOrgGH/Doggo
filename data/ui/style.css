@@ -12,3 +12,11 @@
     color: white;
     background-color: @red_5;
 }
+
+.UnfriendlyText {
+  color: @red_2;
+}
+
+.FriendlyText {
+  color: @green_4;
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="dog">
-	<schema id="page.codeberg.SOrg.DogGTK" path="/page/codeberg/SOrg/DogGTK/">
+	<schema id="@appid@" path="/page/codeberg/SOrg/DogGTK/">
 	</schema>
 </schemalist>
