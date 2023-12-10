@@ -1,6 +1,6 @@
 #include "config.h"
 
-#include "dog-debug-info.h"
+#include "debug-info.h"
 
 /* Copied and adapted from https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/demo/adw-demo-debug-info.c, originally copied and adapted from gtk/inspector/general.c */
 static void

@@ -1,4 +1,4 @@
-/* dog-application.c
+/* application.c
  *
  * Copyright 2023 sungsphinx
  *
@@ -19,9 +19,9 @@
  */
 
 #include "config.h"
-#include "dog-application.h"
-#include "dog-window.h"
-#include "dog-debug-info.h"
+#include "application.h"
+#include "window.h"
+#include "debug-info.h"
 #include <glib/gi18n.h>
 
 struct _DogApplication
@@ -164,3 +164,4 @@ dog_application_init (DogApplication *self)
 	                                       "win.abandon",
 	                                       (const char *[]) { "<primary>b", NULL });
 }
+

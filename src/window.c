@@ -20,7 +20,7 @@
 
 #include "config.h"
 
-#include "dog-window.h"
+#include "window.h"
 
 struct _DogWindow
 {

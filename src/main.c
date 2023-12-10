@@ -22,7 +22,7 @@
 
 #include <glib/gi18n.h>
 
-#include "dog-application.h"
+#include "application.h"
 
 int
 main (int   argc,

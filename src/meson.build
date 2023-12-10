@@ -4,9 +4,9 @@ pkgdatadir = datadir / meson.project_name()
 
 dog_sources = [
   'main.c',
-  'dog-application.c',
-  'dog-window.c',
-  'dog-debug-info.c',
+  'application.c',
+  'window.c',
+  'debug-info.c',
   resources,
 ]
 

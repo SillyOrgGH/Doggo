@@ -1,4 +1,4 @@
-/* dog-application.h
+/* application.h
  *
  * Copyright 2023 sungsphinx
  *
