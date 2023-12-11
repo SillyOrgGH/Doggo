@@ -21,10 +21,7 @@ GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br
 
 ### Install (via Flathub)
 
-[![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.Doggo)
-
-> **Note**
-> Doggo is not currently on Flathub, [but you can track progress here](https://codeberg.org/SOrg/Doggo/issues/7) or [here](https://github.com/flathub/flathub/pull/4699).
+[![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
 
 ### Install (Manually)
 
