@@ -10,7 +10,7 @@
 <img style="vertical-align: middle;" src="https://codeberg.org/SOrg/Doggo/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
 
 # Doggo
-GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br>[SOrg Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/Doggo/issues) · [Install/Create Bundle](#install) · [Credits](#credits) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/Doggo/raw/branch/main/src/images/bjrunoada.jpg)
+GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br>[Silly Org Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/Doggo/issues) · [Install/Create Bundle](#install) · [Credits](#credits) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/Doggo/raw/branch/main/src/images/bjrunoada.jpg)
 </div>
 
 ## Clone Repo?
@@ -23,29 +23,29 @@ GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br
 
 [![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
 
-### Install (Manually)
+### Install (Development Version)
 
 1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
 
-2. Download the ```page.codeberg.SOrg.DogGTK.json``` file and make a folder to put it in.
+2. Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
 
 3. Open a terminal in that folder and choose one of the following to run:
 
 * 3a. Install Directly: 
 ```
-flatpak-builder --user --install --force-clean build-dir page.codeberg.SOrg.DogGTK.json
+flatpak-builder --user --install --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
 ```
 
 * 3b. Build Bundle: 
 
 ```
-flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.json
+flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
 ```
 
 Then run:
 
 ```
-flatpak build-bundle repo page.codeberg.SOrg.DogGTK.flatpak page.codeberg.SOrg.DogGTK
+flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
 ``` 
 This will create a bundle (.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
 
