@@ -43,7 +43,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://codeberg.org/SOrg/DogGTK.git",
+                    "url": "https://codeberg.org/SOrg/Doggo.git",
                     "tag": "3.0",
                     "x-checker-data": {
                         "type": "git",
