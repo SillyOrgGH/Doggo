@@ -1,16 +1,16 @@
 {
-    "app-id" : "page.codeberg.SOrg.DogGTK",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "dog",
-    "finish-args" : [
+    "app-id": "page.codeberg.SOrg.DogGTK",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "45",
+    "sdk": "org.gnome.Sdk",
+    "command": "dog",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -21,11 +21,13 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
-	{
+    "modules": [
+        {
             "name": "blueprint-compiler",
             "buildsystem": "meson",
-            "cleanup": ["*"],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -33,19 +35,19 @@
                     "tag": "v0.10.0"
                 }
             ]
-	},
+        },
         {
-            "name" : "dog",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "dog",
+            "builddir": true,
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://codeberg.org/SOrg/DogGTK.git",
-                    "tag" : "3.0",
+                    "type": "git",
+                    "url": "https://codeberg.org/SOrg/DogGTK.git",
+                    "tag": "3.0",
                     "x-checker-data": {
-                    	"type": "git",
-                    	"tag-pattern": "([\\d.]+)$"
+                        "type": "git",
+                        "tag-pattern": "([\\d.]+)$"
                     }
                 }
             ]
