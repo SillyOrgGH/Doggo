@@ -9,6 +9,7 @@
     <file alias="icons/dog.svg" preprocess="xml-stripblanks">ui/icons/dog.svg</file>
     <file alias="icons/dog-angry.svg" preprocess="xml-stripblanks">ui/icons/dog-angry.svg</file>
     <file alias="icons/dog-scared.svg" preprocess="xml-stripblanks">ui/icons/dog-scared.svg</file>
+    <file alias="icons/dog-dead.svg" preprocess="xml-stripblanks">ui/icons/dog-dead.svg</file>
     <file alias="icons/dog-devel.svg" preprocess="xml-stripblanks">ui/icons/dog-devel.svg</file>
     <file alias="icons/dog-symbolic.svg" preprocess="xml-stripblanks">ui/icons/dog-symbolic.svg</file>
     <file alias="icons/food-sausage.svg" preprocess="xml-stripblanks">ui/icons/food-sausage.svg</file>

@@ -59,7 +59,8 @@ enum Results_Pet {
 
 enum Results_Feed {
   ENJOY_FOOD,
-  DISLIKE_FOOD
+  DISLIKE_FOOD,
+  DEAD_FOOD
 };
 
 static void
@@ -84,17 +85,22 @@ display_result_pet (DogWindow *self) {
 
 static void
 display_result_feed (DogWindow *self) {
-	int result_choice = g_random_int_range (0, DISLIKE_FOOD + 1);
+	int result_choice = g_random_int_range (0, DEAD_FOOD + 1);
 
 	if (result_choice == ENJOY_FOOD) {
           adw_navigation_view_pop (self->navigationview1);
           adw_navigation_view_push_by_tag (self->navigationview1, "dog_food_page");
-        }
+	}
 
-        if (result_choice == DISLIKE_FOOD) {
+	if (result_choice == DISLIKE_FOOD) {
           adw_navigation_view_pop (self->navigationview1);
           adw_navigation_view_push_by_tag (self->navigationview1, "dog_dislikefood_page");
-        }
+	}
+
+	if (result_choice == DEAD_FOOD) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_deadfood_page");
+	}
 }
 
 static void

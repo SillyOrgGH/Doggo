@@ -305,6 +305,50 @@ template $DogWindow : Adw.ApplicationWindow {
         };
       }
 
+      Adw.NavigationPage dog_deadfood_page {
+        title: "Doggo Is Dead";
+        tag: "dog_deadfood_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar_deadfood {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-dead";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "Uh Oh";
+                margin-bottom: 15;
+                styles ["title-1", "UnfriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo died because of the food.";
+                margin-bottom: 15;
+                styles ["title-4", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
       Adw.NavigationPage dog_abandon_page {
         title: "Doggo Abandoned";
         tag: "dog_abandon_page";

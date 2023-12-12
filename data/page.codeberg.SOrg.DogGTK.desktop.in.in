@@ -6,4 +6,6 @@ Icon=@appid@
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;Game;
+# Translators: Do NOT translate or transliterate this text (these are enum types)!
+X-Purism-FormFactor=Workstation;Mobile;
 StartupNotify=true
