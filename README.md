@@ -33,18 +33,31 @@ GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br
 
 ### Install (Development Version)
 
-1. Install Flatpak (if it isn't already, with the Flathub remote available) and flatpak-builder.
+**1.** Install Flatpak (if it isn't installed already, **with [Flathub](https://flathub.org) and the [GNOME Nightly remote](https://wiki.gnome.org/Apps/Nightly)**) and flatpak-builder.
 
-2. Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
+**2.** Make sure you have ```runtime/org.gnome.Platform/x86_64/master``` &amp; ```runtime/org.gnome.Sdk/x86_64/master``` installed, you can install the platform with:
 
-3. Open a terminal in that folder and choose one of the following to run:
+```
+flatpak install runtime/org.gnome.Platform/x86_64/master
+```
 
-* 3a. Install Directly: 
+And the SDK with:
+
+```
+flatpak install runtime/org.gnome.Platform/x86_64/master
+```
+
+
+**3.** Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
+
+**4.** Open a terminal in that folder and choose one of the following to run:
+
+* **4a.** Install Directly: 
 ```
 flatpak-builder --user --install --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
 ```
 
-* 3b. Build Bundle: 
+* **4b.** Build Bundle: 
 
 ```
 flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
@@ -55,7 +68,7 @@ Then run:
 ```
 flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
 ``` 
-This will create a bundle (.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
+This will create a bundle (*.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
 
 ## Credits
 [Google](https://about.google) - [Noto (& Color) Emoji](https://github.com/googlefonts/noto-emoji)\
