@@ -15,7 +15,7 @@
 <img style="vertical-align: middle;" src="https://codeberg.org/SOrg/Doggo/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
 
 # Doggo
-GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br>[Silly Org Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/Doggo/issues) · [Install/Create Bundle](#install) · [Credits](#credits) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/Doggo/raw/branch/main/src/images/bjrunoada.jpg)
+GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br>[Silly Org Website](https://sorg.codeberg.page) · [Issue Tracker](https://codeberg.org/SOrg/Doggo/issues) · [Install/Create Bundle](#install) · [Credits](#credits) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/Doggo/raw/branch/main/data/ui/images/bjrunoada.jpg)
 </div>
 
 ## Screenshots
