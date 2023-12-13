@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Platform",
     "runtime-version": "master",
     "sdk": "org.gnome.Sdk",
-    "command": "dog",
+    "command": "doggo",
     "desktop-file-name-suffix": " (Nightly)",
     "tags": ["nightly"],
     "finish-args": [
