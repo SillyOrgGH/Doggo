@@ -29,8 +29,9 @@
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.1</url>
       <description>
         <ul>
-          <li>Updated App Icon (Slightly Noticable)</li>
-          <li>Added a new result from giving the doggo food (it's sadge.. trust)</li>
+          <li>Updated App Icon</li>
+          <li>Added a new result from giving the doggo food</li>
+          <li>Added Purism Form Factor options to desktop file</li>
         </ul>
       </description>
     </release>
