@@ -15,7 +15,7 @@ dog_deps = [
   dependency('libadwaita-1', version: '>= 1.2'),
 ]
 
-executable('dog', dog_sources,
+executable('doggo', dog_sources,
   dependencies: dog_deps,
        install: true,
 )
