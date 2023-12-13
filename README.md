@@ -18,7 +18,7 @@ GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br
 </div>
 
 ## Screenshots
-<img src="data/screenshots/screenshot-1.png" alt="Main Window" width="322" height="322"/> | <img src="data/screenshots/screenshot-2.png" alt="Dog Is Friendly Page" width="322" height="322"/> | <img src="data/screenshots/screenshot-3.png" alt="Dog Is Unfriendly Page" width="322" height="322"/>
+<img src="data/screenshots/screenshot-1.png" alt="Main Window"/> | <img src="data/screenshots/screenshot-2.png" alt="Dog Is Friendly Page"/> | <img src="data/screenshots/screenshot-3.png" alt="Dog Is Unfriendly Page"/>
 -------------------------------------------- | -------------------------------------- | ----------------------------------------------
 
 ## Clone Repo?
@@ -49,6 +49,7 @@ flatpak install runtime/org.gnome.Platform/x86_64/master
 
 
 **3.** Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
+* Where is the original manifest? [[Jump]](#original-manifest-non-devel)
 
 **4.** Open a terminal in that folder and choose one of the following to run:
 
@@ -69,6 +70,9 @@ Then run:
 flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
 ``` 
 This will create a bundle (*.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
+
+## Original Flatpak Manifest (Non-Devel)
+It is unnecessary to have to maintain the devel and the default manifest as well as the Flathub manifest, Flathub also automatically updates the tag version inside the manifest.
 
 ## Credits
 [Google](https://about.google) - [Noto (& Color) Emoji](https://github.com/googlefonts/noto-emoji)\
