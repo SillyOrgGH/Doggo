@@ -6,7 +6,7 @@
 > <br/>**Doggo as of now is in maintenance mode.**
 -->
 [![Flathub](https://img.shields.io/flathub/v/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Flathub)][flathub]
-[![Flathub Downloads](https://img.shields.io/flathub/downloads/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Downloads)][flathub]
+[![Flathub Installs](https://img.shields.io/flathub/downloads/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Installs)][flathub]
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
 [![Please don't upload to GitHub](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/NoGitHubBadgeORIGINAL.svg)](https://nogithub.codeberg.page)
 [![License: GPL-3.0-or-later](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/GPLv3OrLaterBadge.svg)](https://codeberg.org/SOrg/DogQt/src/branch/main/LICENSE)
