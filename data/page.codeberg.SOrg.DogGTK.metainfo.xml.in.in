@@ -35,7 +35,8 @@
       <description>
         <ul>
           <li>URGENCY HIGH: Fix Desktop file not launching app</li>
-          <li>New Doggo Is Dead, Doggo Is Neutral &amp; Doggo Is Sleeping results</li>
+          <li>Added Doggo Is Dead, Neutral &amp; Sleeping results</li>
+          <li>Removed Purism Form Factor options from the desktop file (It is unneeded from what it seems)</li>
         </ul>
         <p>Some changes may have not been listed here.</p>
       </description>
