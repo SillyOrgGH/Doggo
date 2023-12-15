@@ -8,6 +8,7 @@
     <file alias="style.css">ui/style.css</file>
     <file alias="icons/dog.svg" preprocess="xml-stripblanks">ui/icons/dog.svg</file>
     <file alias="icons/dog-neutral.svg" preprocess="xml-stripblanks">ui/icons/dog-neutral.svg</file>
+    <file alias="icons/dog-sleep.svg" preprocess="xml-stripblanks">ui/icons/dog-sleep.svg</file>
     <file alias="icons/dog-affectionate.svg" preprocess="xml-stripblanks">ui/icons/dog-affectionate.svg</file>
     <file alias="icons/dog-angry.svg" preprocess="xml-stripblanks">ui/icons/dog-angry.svg</file>
     <file alias="icons/dog-scared.svg" preprocess="xml-stripblanks">ui/icons/dog-scared.svg</file>

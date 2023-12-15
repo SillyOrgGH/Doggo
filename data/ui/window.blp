@@ -261,6 +261,50 @@ template $DogWindow : Adw.ApplicationWindow {
         };
       }
 
+      Adw.NavigationPage dog_sleeping_page {
+        title: "Doggo Is Sleeping";
+        tag: "dog_sleeping_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-sleep";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "ZZZzzzz...";
+                margin-bottom: 15;
+                styles ["title-1", "NeutralText"]
+              }
+
+              Label {
+                label: "The Doggo is sleeping right now.";
+                margin-bottom: 20;
+                styles ["title-4", "NeutralText"]
+              }
+            };
+          };
+        };
+      }
+
       Adw.NavigationPage dog_bite_page {
         title: "Doggo Bit You";
         tag: "dog_bite_page";

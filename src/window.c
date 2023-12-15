@@ -56,6 +56,7 @@ enum Results_Pet {
   UNFRIENDLY,
   AFFECTIONATE,
   NEUTRAL,
+  SLEEPING,
   BITE,
   DEAD
 };
@@ -88,6 +89,11 @@ display_result_pet (DogWindow *self) {
 	if (result_choice == NEUTRAL) {
           adw_navigation_view_pop (self->navigationview1);
           adw_navigation_view_push_by_tag (self->navigationview1, "dog_neutral_page");
+	}
+
+	if (result_choice == SLEEPING) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_sleeping_page");
 	}
 
 	if (result_choice == BITE) {
