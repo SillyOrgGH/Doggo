@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Doggo
 Comment=Compooter Dawg
-Exec=dog
+Exec=doggo
 Icon=@appid@
 Terminal=false
 Type=Application
