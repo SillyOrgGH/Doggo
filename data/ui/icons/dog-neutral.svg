@@ -5,7 +5,7 @@
    width="128px"
    version="1.1"
    id="svg50"
-   sodipodi:docname="dog-scared.svg"
+   sodipodi:docname="dog-neutral.svg"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -16,28 +16,6 @@
      id="defs50">
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient48"
-       id="linearGradient49"
-       x1="4.7468443"
-       y1="45.979763"
-       x2="12.442574"
-       y2="45.979763"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.79542311,0,0,0.92883834,-46.362628,-23.372423)" />
-    <linearGradient
-       id="linearGradient48"
-       inkscape:collect="always">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop48" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0.0104712;"
-         offset="1"
-         id="stop49" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient50"
        id="linearGradient51"
        x1="65.537025"
@@ -45,7 +23,7 @@
        x2="73.232758"
        y2="-15.104271"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.75424427,0,0,0.96257684,-49.901445,-51.263188)" />
+       gradientTransform="matrix(0.75424427,0,0,0.96257684,-25.224997,-52.727739)" />
     <linearGradient
        id="linearGradient50"
        inkscape:collect="always">
@@ -58,6 +36,16 @@
          offset="1"
          id="stop51" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50"
+       id="linearGradient1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.75424427,0,0,0.96257684,-79.862669,63.700423)"
+       x1="65.537025"
+       y1="-15.104271"
+       x2="73.232758"
+       y2="-15.104271" />
   </defs>
   <sodipodi:namedview
      id="namedview50"
@@ -407,39 +395,39 @@
      fill="#e66100"
      id="path50" />
   <rect
-     style="fill:url(#linearGradient49);stroke-width:0.59236"
-     id="rect48-3"
-     width="6.1213608"
-     height="13.992002"
-     x="-42.58688"
-     y="12.339341"
-     ry="3.5740442"
-     transform="matrix(-0.65571591,-0.75500771,0.91857483,-0.39524712,0,0)" />
-  <rect
-     style="fill:#000000;stroke-width:0.59236"
-     id="rect48"
-     width="6.1213608"
-     height="13.992002"
-     x="-42.322777"
-     y="11.991467"
-     ry="3.5740442"
-     transform="matrix(-0.65571591,-0.75500771,0.91857483,-0.39524712,0,0)" />
-  <rect
      style="fill:url(#linearGradient51);stroke-width:0.587205"
      id="rect48-35-2"
      width="5.8044596"
      height="14.500238"
-     x="-0.47050768"
-     y="-73.052322"
+     x="24.20594"
+     y="-74.516869"
      ry="3.7038653"
-     transform="matrix(-0.50584159,0.86262639,-0.96029449,-0.27898834,0,0)" />
+     transform="matrix(-0.19376026,0.98104891,-0.99861572,0.05259896,0,0)" />
   <rect
      style="fill:#000000;stroke-width:0.587205"
      id="rect48-35"
      width="5.8044596"
      height="14.500238"
-     x="-0.45464849"
-     y="-73.596619"
+     x="24.221798"
+     y="-75.061165"
      ry="3.7038653"
-     transform="matrix(-0.50584159,0.86262639,-0.96029449,-0.27898834,0,0)" />
+     transform="matrix(-0.19376026,0.98104891,-0.99861572,0.05259896,0,0)" />
+  <rect
+     style="fill:url(#linearGradient1);stroke-width:0.587205"
+     id="rect48-35-2-7"
+     width="5.8044596"
+     height="14.500238"
+     x="-30.43173"
+     y="41.911297"
+     ry="3.7038653"
+     transform="matrix(0.19376026,-0.98104891,0.99861572,-0.05259896,0,0)" />
+  <rect
+     style="fill:#000000;stroke-width:0.587205"
+     id="rect48-35-5"
+     width="5.8044596"
+     height="14.500238"
+     x="-30.415873"
+     y="41.367001"
+     ry="3.7038653"
+     transform="matrix(0.19376026,-0.98104891,0.99861572,-0.05259896,0,0)" />
 </svg>

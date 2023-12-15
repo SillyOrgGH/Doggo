@@ -3,7 +3,9 @@
   <id>@appid@</id>
   <name>Doggo</name>
   <summary>GTK4 + Libadwaita Game themed around a dog</summary>
-  <developer_name>Silly Org, sungsphinx &amp; Contributors</developer_name>
+  <developer id="sorg.codeberg.page">
+    <name>Silly Org, sungsphinx &amp; Contributors</name>
+  </developer>
   <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -25,13 +27,14 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="3.1.1" date="2023-12-15" type="stable" urgency="high">
-      <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.1.1</url>
+    <release version="3.2" date="2023-12-13" type="stable" urgency="high">
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.2</url>
       <description>
         <ul>
-          <li>Fix Desktop file not launching app/li>
-          <li>Update Version inside app</li>
+          <li>URGENCY HIGH: Fix Desktop file not launching app</li>
+          <li>New Doggo Is Dead &amp; Doggo Is Neutral results</li>
         </ul>
+        <p>Some changes may have not been listed here.</p>
       </description>
     </release>
     <release version="3.1" date="2023-12-13" type="stable">
@@ -110,6 +113,9 @@ New features &amp; changes below:</p>
     <control>tablet</control>
     <control>touch</control>
   </supports>
+  <provides>
+    <binary>doggo</binary>
+  </provides>
   <content_rating type="oars-1.1"/>
   <keywords>
     <keyword>dog</keyword>

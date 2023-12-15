@@ -173,6 +173,94 @@ template $DogWindow : Adw.ApplicationWindow {
         };
       }
 
+      Adw.NavigationPage dog_affectionate_page {
+        title: "Doggo Loves You";
+        tag: "dog_affectionate_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-affectionate";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "Woooof!! ";
+                margin-bottom: 15;
+                styles ["title-1", "FriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo loves you! ❤️";
+                margin-bottom: 20;
+                styles ["title-4", "FriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_neutral_page {
+        title: "Doggo Is Neutral";
+        tag: "dog_neutral_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-neutral";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "Woof Woof...";
+                margin-bottom: 15;
+                styles ["title-1", "NeutralText"]
+              }
+
+              Label {
+                label: "The Doggo is feeling neutral right now.";
+                margin-bottom: 20;
+                styles ["title-4", "NeutralText"]
+              }
+            };
+          };
+        };
+      }
+
       Adw.NavigationPage dog_bite_page {
         title: "Doggo Bit You";
         tag: "dog_bite_page";
@@ -209,6 +297,50 @@ template $DogWindow : Adw.ApplicationWindow {
 
               Label {
                 label: "The Doggo bit you!!";
+                margin-bottom: 20;
+                styles ["title-4", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_dead_page {
+        title: "Doggo Is Dead";
+        tag: "dog_dead_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog-dead";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "Beep.. beep.. beep.. beeeeep";
+                margin-bottom: 15;
+                styles ["title-1", "UnfriendlyText"]
+              }
+
+              Label {
+                label: "The Doggo had a heart attack!!";
                 margin-bottom: 20;
                 styles ["title-4", "UnfriendlyText"]
               }

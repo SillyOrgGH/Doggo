@@ -54,7 +54,10 @@ enum Choices {
 enum Results_Pet {
   FRIENDLY,
   UNFRIENDLY,
-  BITE
+  AFFECTIONATE,
+  NEUTRAL,
+  BITE,
+  DEAD
 };
 
 enum Results_Feed {
@@ -65,7 +68,7 @@ enum Results_Feed {
 
 static void
 display_result_pet (DogWindow *self) {
-	int result_choice = g_random_int_range (0, BITE + 1);
+	int result_choice = g_random_int_range (0, DEAD + 1);
 
 	if (result_choice == UNFRIENDLY) {
           adw_navigation_view_pop (self->navigationview1);
@@ -77,9 +80,24 @@ display_result_pet (DogWindow *self) {
           adw_navigation_view_push_by_tag (self->navigationview1, "dog_friendly_page");
 	}
 
+	if (result_choice == AFFECTIONATE) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_affectionate_page");
+	}
+
+	if (result_choice == NEUTRAL) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_neutral_page");
+	}
+
 	if (result_choice == BITE) {
           adw_navigation_view_pop (self->navigationview1);
           adw_navigation_view_push_by_tag (self->navigationview1, "dog_bite_page");
+	}
+
+	if (result_choice == DEAD) {
+          adw_navigation_view_pop (self->navigationview1);
+          adw_navigation_view_push_by_tag (self->navigationview1, "dog_dead_page");
 	}
 }
 
@@ -137,4 +155,3 @@ dog_window_init (DogWindow *self)
 	register_gaction (self, "feed", G_CALLBACK(feed));
 	register_gaction (self, "abandon", G_CALLBACK(abandon));
 }
-

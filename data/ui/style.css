@@ -20,3 +20,7 @@
 .FriendlyText {
   color: @green_4;
 }
+
+.NeutralText {
+  color: @orange_3;
+}

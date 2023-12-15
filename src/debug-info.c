@@ -64,7 +64,7 @@ dog_generate_debug_info (void)
 #ifndef G_OS_WIN32
   gboolean flatpak = g_file_test ("/.flatpak-info", G_FILE_TEST_EXISTS);
 #endif
-  g_string_append (string, "Woof woof, debug info!\n");
+  g_string_append (string, "Woof Woof, debug info!\n");
 
   g_string_append (string, "\n");
 
