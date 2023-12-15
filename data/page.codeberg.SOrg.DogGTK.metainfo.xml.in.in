@@ -30,7 +30,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="3.2" date="2023-12-13" type="stable" urgency="high">
+    <release version="3.2" date="2023-12-15" type="stable" urgency="high">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.2</url>
       <description>
         <ul>
