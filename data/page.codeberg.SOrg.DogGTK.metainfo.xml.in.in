@@ -3,9 +3,12 @@
   <id>@appid@</id>
   <name>Doggo</name>
   <summary>GTK4 + Libadwaita Game themed around a dog</summary>
-  <developer id="sorg.codeberg.page">
+  <!--<developer id="sorg.codeberg.page">
     <name>Silly Org, sungsphinx &amp; Contributors</name>
   </developer>
+  -->
+  <!-- Keep developer_name for now, use the developer tag later -->
+  <developer_name>Silly Org, sungsphinx &amp; Contributors</developer_name>
   <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
