@@ -34,7 +34,7 @@
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.2</url>
       <description>
         <ul>
-          <li>URGENCY HIGH: Fix Desktop file not launching app</li>
+          <li>Fix Desktop file not launching app</li>
           <li>Added Doggo Is Dead, Neutral &amp; Sleeping results</li>
           <li>Removed Purism Form Factor options from the desktop file (It is unneeded from what it seems)</li>
         </ul>
