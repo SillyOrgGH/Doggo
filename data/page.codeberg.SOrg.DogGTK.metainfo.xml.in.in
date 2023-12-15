@@ -25,6 +25,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.1.1" date="2023-12-15" type="stable" urgency="high">
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.1.1</url>
+      <description>
+        <ul>
+          <li>Fix Desktop file not launching app/li>
+          <li>Update Version inside app</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.1" date="2023-12-13" type="stable">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.1</url>
       <description>
