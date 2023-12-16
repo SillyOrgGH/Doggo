@@ -1,4 +1,4 @@
-project('dog', 'c',
+project('doggo', 'c',
           license: 'GPL3+',
           version: '3.3',
     meson_version: '>= 0.62.0',
