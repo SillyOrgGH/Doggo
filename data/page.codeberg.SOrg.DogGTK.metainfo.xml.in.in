@@ -3,11 +3,6 @@
   <id>@appid@</id>
   <name>Doggo</name>
   <summary>GTK4 + Libadwaita Game themed around a dog</summary>
-  <!--<developer id="sorg.codeberg.page">
-    <name>Silly Org, sungsphinx &amp; Contributors</name>
-  </developer>
-  -->
-  <!-- Keep developer_name for now, use the developer tag later -->
   <developer_name>Silly Org, sungsphinx &amp; Contributors</developer_name>
   <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
@@ -30,7 +25,17 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="3.2" date="2023-12-15" type="stable" urgency="high">
+    <release version="3.3" date="2023-12-16" type="stable">
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.2</url>
+      <description>
+        <p>At the time of writing these release notes, Doggo has 188 installs! I (sungsphinx) honestly did not expect that many downloads, if there is anything you want changed/added, please write a review or submit an issue over at Codeberg.</p>
+        <p>Like usual, bug fixes/changes below:</p>
+        <ul>
+          <li>Fix the Doggo Is Sleeping text bubble's font</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.2" date="2023-12-15" type="stable" urgency="critical">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.2</url>
       <description>
         <ul>
@@ -111,16 +116,19 @@ New features &amp; changes below:</p>
   <url type="homepage">https://sorg.codeberg.page/Doggo</url>
   <url type="bugtracker">https://codeberg.org/SOrg/Doggo/issues</url>
   <url type="vcs-browser">https://codeberg.org/SOrg/Doggo</url>
+  <categories>
+    <category>Game</category>
+  </categories>
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
     <control>tablet</control>
     <control>touch</control>
   </supports>
+  <content_rating type="oars-1.1"/>
   <provides>
     <binary>doggo</binary>
   </provides>
-  <content_rating type="oars-1.1"/>
   <keywords>
     <keyword>dog</keyword>
     <keyword>doggo</keyword>
