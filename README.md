@@ -59,7 +59,7 @@ flatpak install runtime/org.gnome.Platform/x86_64/master
 
 * **4a.** Install Directly: 
 ```
-flatpak-builder --user --install --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
+flatpak-builder --install --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
 ```
 
 * **4b.** Build Bundle: 
@@ -74,9 +74,6 @@ Then run:
 flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
 ``` 
 This will create a bundle (*.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
-
-## Original Flatpak Manifest (Non-Devel)
-It is unnecessary to have to maintain the devel and the default manifest as well as the Flathub manifest, Flathub also automatically updates the tag version inside the manifest.
 
 ## Credits
 [Google](https://about.google) - [Noto (& Color) Emoji](https://github.com/googlefonts/noto-emoji)\

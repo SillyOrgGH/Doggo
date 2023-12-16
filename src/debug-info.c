@@ -134,6 +134,10 @@ dog_generate_debug_info (void)
     g_free (arch);
     g_free (flatpak_version);
     g_free (devel);
+  } else {
+    g_string_append (string, "Flatpak:\n");
+    g_string_append (string, "- WARNING: " APPLICATION_NAME " not running as Flatpak, any issue you report using a non-flatpak build will be closed!\n");
+    g_string_append (string, "\n");
   }
 #endif
 
