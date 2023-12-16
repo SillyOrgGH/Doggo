@@ -28,7 +28,7 @@
     <release version="3.3" date="2023-12-16" type="stable">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.2</url>
       <description>
-        <p>At the time of writing these release notes, Doggo has 188 installs! I (sungsphinx) honestly did not expect that many downloads, if there is anything you would like changed/added, please either write a review or submit an issue over at Codeberg.</p>
+        <p>At the time of writing these release notes, Doggo nearly has 200 installs! I (sungsphinx) honestly did not expect that many downloads, if there is anything you would like changed/added, please either write a review or submit an issue over at Codeberg.</p>
         <p>Like usual, bug fixes/changes below:</p>
         <ul>
           <li>Fix the Doggo Is Sleeping text bubble's font</li>
