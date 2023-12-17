@@ -32,7 +32,7 @@ body:
       options:
         - Latest Stable (Check README, Flathub or Releases Tab)
         - Development
-        - Older Version
+        - Old Version
     validations:
       required: true
   - type: textarea
