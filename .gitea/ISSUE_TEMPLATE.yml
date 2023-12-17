@@ -21,7 +21,6 @@ body:
     attributes:
       label: What happened?
       description: What bug occurred that shouldn't have?
-      placeholder: The bug that occurred
     validations:
       required: true
   - type: dropdown
