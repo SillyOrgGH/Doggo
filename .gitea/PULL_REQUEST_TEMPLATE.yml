@@ -7,7 +7,7 @@ body:
       label: Requirements
       description: Please make sure these requirements are met.
       options:
-        - label: I have tested this PR and made sure nothing noticable breaks.
+        - label: I have tested this PR and made sure nothing noticable breaks. (If a WIP, check this box anyway and only unmark as WIP when tested.)
           required: true
   - type: textarea
     id: what-changed
