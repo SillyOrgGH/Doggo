@@ -30,9 +30,9 @@ body:
       label: Version
       description: What version of Doggo are you running?
       options:
-        - Latest Stable
+        - Latest Stable (Check README, Flathub or Releases Tab)
         - Development
-        - Other
+        - Older Version
     validations:
       required: true
   - type: textarea
