@@ -14,6 +14,8 @@ body:
       options:
         - label: Doggo is running under Flatpak
           required: true
+        - label: I have checked the issue tracker to make sure this isn't a duplicate
+          required: true
   - type: textarea
     id: what-happened
     attributes:
