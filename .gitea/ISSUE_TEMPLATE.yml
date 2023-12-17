@@ -1,4 +1,4 @@
-name: Bug Report
+name: 🐛 Bug Report
 about: File a bug report
 title: '[🐛 Bug]: '
 body:
@@ -6,12 +6,20 @@ body:
     attributes:
       value: |
         Thank you for filing this bug report.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Doggo is running under Flatpak
+      description: Non-Flatpak builds are **not supported**, your issue **will be closed** if you use one.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: What happened that shouldn't have, and what did you expect?
-      placeholder: What happened?
+      description: What bug occurred that shouldn't have?
+      placeholder: The bug that occurred
     validations:
       required: true
   - type: dropdown
