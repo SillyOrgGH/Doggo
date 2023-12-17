@@ -7,12 +7,12 @@ body:
       value: |
         Thank you for filing this bug report.
   - type: checkboxes
-    id: checks
+    id: requirements
     attributes:
-      label: Doggo is running under Flatpak
-      description: Non-Flatpak builds are **not supported**, your issue **will be closed** if you use one.
+      label: Requirements
+      description: Please make sure these requirements are met.
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: Doggo is running under Flatpak
           required: true
   - type: textarea
     id: what-happened
