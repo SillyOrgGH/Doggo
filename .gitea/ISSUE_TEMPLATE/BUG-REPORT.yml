@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before you file this bug report, **please check the [issue tracker](https://codeberg.org/SOrg/Doggo/issues)** because the bug might already be reported.
+        Before you file this bug report, **please check the [issue tracker](https://codeberg.org/SOrg/Doggo/issues?labels=171142)** because the bug might have already been reported.
   - type: checkboxes
     id: requirements
     attributes:
