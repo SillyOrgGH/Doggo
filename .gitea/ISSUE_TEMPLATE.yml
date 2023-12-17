@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for filing this bug report.
+        Before you file this bug report, **please check the [issue tracker](https://codeberg.org/SOrg/Doggo/issues)** because this bug report might already exist.
   - type: checkboxes
     id: requirements
     attributes:
