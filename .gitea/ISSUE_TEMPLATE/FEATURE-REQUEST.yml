@@ -1,0 +1,31 @@
+name: 💡 Feature Request
+about: Request a feature to be added
+title: '[💡 Feature Request]: '
+labels: 'enhancement'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you file this feature request, **please check the [issue tracker](https://codeberg.org/SOrg/Doggo/issues?labels=171144)** because this feature may have already been requested.
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Please make sure these requirements are met.
+      options:
+        - label: I have checked the issue tracker to make sure this isn't a duplicate
+          required: true
+  - type: textarea
+    id: what-add
+    attributes:
+      label: What should be added?
+      description: What feature should be added to Doggo?
+    validations:
+      required: true
+  - type: textarea
+    id: why-add
+    attributes:
+      label: What should this be added?
+      description: Why should this feature be added to Doggo?
+    validations:
+      required: true
