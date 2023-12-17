@@ -1,7 +1,5 @@
-name: New Features Pull Request
+name: Pull Request
 about: Request to merge changes
-title: '[New Feature(s)]: '
-labels: 'enhancement'
 body:
   - type: checkboxes
     id: requirements
