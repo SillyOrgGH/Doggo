@@ -7,7 +7,7 @@ body:
       label: Requirements
       description: Please make sure these requirements are met.
       options:
-        - label: I have tested this locally
+        - label: I have tested this PR and made sure nothing noticable breaks.
           required: true
   - type: textarea
     id: what-changed
@@ -16,3 +16,17 @@ body:
       description: What has this PR added/changed in Doggo?
     validations:
       required: true
+
+  - type: textarea
+    id: fixes-closes
+    attributes:
+      label: Does this Pull Request fix/close an issue?
+      description: If so, please reference it below.
+      placeholder: This Pull Request closes #1234
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra
+      description: If there is anything you would like to mention that does not have a section, put it here.
+      placeholder: Bla bla bla bla, lorem ipsum

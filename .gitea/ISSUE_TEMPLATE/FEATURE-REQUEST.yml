@@ -29,3 +29,10 @@ body:
       description: Why should this feature be added to Doggo?
     validations:
       required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra
+      description: If there is anything you would like to mention that does not have a section, put it here.
+      placeholder: Bla bla bla bla, lorem ipsum
