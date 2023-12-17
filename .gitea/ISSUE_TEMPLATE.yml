@@ -36,7 +36,7 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Debugging Information/Logs
+      label: Debugging Information
       description: Please provide debugging information here. To get it, open the hamburger menu (☰) -> About Doggo -> Troubleshooting -> Debugging information -> Copy Text
       render: shell
     validations:
