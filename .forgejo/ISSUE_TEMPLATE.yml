@@ -1,0 +1,35 @@
+name: Bug Report
+about: File a bug report
+title: '[🐛 Bug]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for filing this bug report.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What happened that shouldn't have, and what did you expect?
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of Doggo are you running?
+      options:
+        - Latest Stable
+        - Development
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please provide debugging information here. To get it, open the hamburger menu (☰) -> About Doggo -> Troubleshooting -> Debugging information -> Copy Text
+      render: shell
+    validations:
+      required: true
