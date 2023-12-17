@@ -1,7 +1,5 @@
-name: New Features Pull Request
+name: Pull Request
 about: Request to merge changes
-title: '[New Feature(s)]: '
-labels: 'enhancement'
 body:
   - type: checkboxes
     id: requirements
@@ -14,7 +12,7 @@ body:
   - type: textarea
     id: what-changed
     attributes:
-      label: What was added?
-      description: What has this PR added to Doggo?
+      label: What has been added/changed?
+      description: What has this PR added/changed in Doggo?
     validations:
       required: true
