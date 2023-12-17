@@ -39,18 +39,18 @@ GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br
 
 **1.** Install Flatpak (if it isn't installed already, **with [Flathub](https://flathub.org) and the [GNOME Nightly remote](https://wiki.gnome.org/Apps/Nightly)**) and flatpak-builder.
 
-**2.** Make sure you have ```runtime/org.gnome.Platform/x86_64/master``` &amp; ```runtime/org.gnome.Sdk/x86_64/master``` installed, you can install the platform with:
+**2.** Make sure you have ```runtime/org.gnome.Platform/[x86_64/aarch64]/master``` &amp; ```runtime/org.gnome.Sdk/[x86_64/aarch64]/master``` installed, you can install the platform with:
 
 ```
-flatpak install runtime/org.gnome.Platform/x86_64/master
+flatpak install runtime/org.gnome.Platform/[x86_64/aarch64]/master
 ```
 
 And the SDK with:
 
 ```
-flatpak install runtime/org.gnome.Platform/x86_64/master
+flatpak install runtime/org.gnome.Platform/[x86_64/aarch64]/master
 ```
-
+### (Choose x86_64 for 64/32bit, aarch64 for arm64)
 
 **3.** Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
 * Where is the original manifest? [[Jump]](#original-manifest-non-devel)
