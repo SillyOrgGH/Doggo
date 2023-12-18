@@ -25,7 +25,7 @@ body:
   - type: textarea
     id: why-add
     attributes:
-      label: What should this be added?
+      label: Why should this be added?
       description: Why should this feature be added to Doggo?
     validations:
       required: true
