@@ -1,10 +1,9 @@
 <!-- Definitions -->
 [flathub]: https://flathub.org/apps/page.codeberg.SOrg.DogGTK
 <!-- End Defenitions -->
-<!--
-> **Warning*
-> <br/>**Doggo as of now is in maintenance mode.**
--->
+> **Warning**
+> Flatpak is the **only officially supported** way of distributing this app, **any bug reports by anyone who uses a non-flatpak version will be closed.**
+
 [![Flathub](https://img.shields.io/flathub/v/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Flathub)][flathub]
 [![Flathub Installs](https://img.shields.io/flathub/downloads/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Installs)][flathub]
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
@@ -28,9 +27,6 @@ GTK4 + Libadwaita Actions &amp; AdwNavigationView demo, also kind of a game.</br
 
 ## Install
 
-> #### **Warning**
-> Flatpak is the **only officially supported** way of distributing this app, **any issues by people which use a non-flatpak version will be closed.**
-
 ### Install (Stable Version via Flathub)
 
 [![Download on Flathub](https://dl.flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/page.codeberg.SOrg.DogGTK)
@@ -53,7 +49,6 @@ flatpak install runtime/org.gnome.Platform/[x86_64/aarch64]/master
 ### (Choose x86_64 for 64/32bit, aarch64 for arm64)
 
 **3.** Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
-* Where is the original manifest? [[Jump]](#original-manifest-non-devel)
 
 **4.** Open a terminal in that folder and choose one of the following to run:
 
