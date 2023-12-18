@@ -53,7 +53,6 @@ flatpak install runtime/org.gnome.Platform/[x86_64/aarch64]/master
 ### (Choose x86_64 for 64/32bit, aarch64 for arm64)
 
 **3.** Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
-* Where is the original manifest? [[Jump]](#original-manifest-non-devel)
 
 **4.** Open a terminal in that folder and choose one of the following to run:
 
