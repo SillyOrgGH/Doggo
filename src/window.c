@@ -30,7 +30,7 @@ struct _DogWindow
 	AdwHeaderBar        *header_bar;
 	//GtkLabel            *wooflabel;
 	GtkLabel            *title_result;
-	GtkLabel            *smalltxt;
+	GtkLabel            *clickslabel;
 	AdwNavigationView   *navigationview1;
 };
 
@@ -44,6 +44,7 @@ dog_window_class_init (DogWindowClass *klass)
 	gtk_widget_class_set_template_from_resource (widget_class, "/page/codeberg/SOrg/DogGTK/window.ui");
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, header_bar);
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, navigationview1);
+	gtk_widget_class_bind_template_child (widget_class, DogWindow, clickslabel);
 }
 
 enum Choices {
@@ -66,6 +67,9 @@ enum Results_Feed {
   DISLIKE_FOOD,
   DEAD_FOOD
 };
+
+int clickamount;
+char clickamountmax[1000000]; // Set it to a large number just in case a no-life gets way too many clicks.
 
 static void
 display_result_pet (DogWindow *self) {
@@ -152,6 +156,28 @@ abandon (DogWindow *self) {
 }
 
 static void
+clicker_show (DogWindow *self) {
+	g_print ("Clicker Mode\n");
+	adw_navigation_view_pop (self->navigationview1);
+	adw_navigation_view_push_by_tag (self->navigationview1, "dog_clicker_page");
+}
+
+static void
+click (DogWindow *self) {
+	clickamount = clickamount + 1;
+	sprintf(clickamountmax, "%d Clicks", clickamount);
+	g_print ("%s\n", clickamountmax);
+	gtk_label_set_label (self->clickslabel, clickamountmax);
+}
+
+static void
+secret1 (DogWindow *self) {
+	clickamount = clickamount + 1000000;
+	sprintf(clickamountmax, "%d Clicks", clickamount);
+	gtk_label_set_label (self->clickslabel, clickamountmax);
+}
+
+static void
 dog_window_init (DogWindow *self)
 {
 	gtk_widget_init_template (GTK_WIDGET (self));
@@ -160,4 +186,7 @@ dog_window_init (DogWindow *self)
 	register_gaction (self, "pet", G_CALLBACK(pet));
 	register_gaction (self, "feed", G_CALLBACK(feed));
 	register_gaction (self, "abandon", G_CALLBACK(abandon));
+	register_gaction (self, "clickershow", G_CALLBACK(clicker_show));
+	register_gaction (self, "click", G_CALLBACK(click));
+	register_gaction (self, "help", G_CALLBACK(secret1));
 }

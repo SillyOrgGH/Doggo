@@ -1,5 +1,8 @@
 subdir('icons')
 
+app_conf = configuration_data()
+app_conf.set('appid', application_id)
+
 blueprints = custom_target('blueprints',
   input: files(
     'ui/window.blp',
@@ -9,26 +12,21 @@ blueprints = custom_target('blueprints',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
 )
 
-resources_conf = configuration_data()
-resources_conf.set('appid', application_id)
-
 resources = gnome.compile_resources(
-  'dog',
+  'doggo',
   configure_file(
-    input: 'dog.gresource.xml.in',
-    output: 'dog.gresource.xml',
-    configuration: resources_conf,
+    input: 'doggo.gresource.xml.in',
+    output: 'doggo.gresource.xml',
+    configuration: app_conf,
   ),
   dependencies: blueprints,
 )
 
-desktop_conf = configuration_data()
-desktop_conf.set('appid', application_id)
 desktop_file = i18n.merge_file(
           input: configure_file(
-            input: files('page.codeberg.SOrg.DogGTK.desktop.in.in'),
-            output: 'page.codeberg.SOrg.DogGTK.desktop.in',
-            configuration: desktop_conf,
+            input: files('app.desktop.in.in'),
+            output: 'app.desktop.in',
+            configuration: app_conf,
           ),
           output: '@0@.desktop'.format(application_id),
          type: 'desktop',
@@ -42,13 +40,11 @@ if desktop_utils.found()
   test('Validate desktop file', desktop_utils, args: [desktop_file])
 endif
 
-appstream_conf = configuration_data()
-appstream_conf.set('appid', application_id)
 appstream_file = i18n.merge_file(
         input: configure_file(
-          input: files('page.codeberg.SOrg.DogGTK.metainfo.xml.in.in'),
-          output: 'page.codeberg.SOrg.DogGTK.metainfo.xml.in',
-          configuration: appstream_conf,
+          input: files('app.metainfo.xml.in.in'),
+          output: 'app.metainfo.xml.in',
+          configuration: app_conf,
         ),
         output: '@0@.metainfo.xml'.format(application_id),
        po_dir: '../po',
@@ -61,7 +57,11 @@ if appstreamcli.found()
   test('Validate appstream file', appstreamcli, args: ['validate', '--no-net', appstream_file])
 endif
 
-install_data('page.codeberg.SOrg.DogGTK.gschema.xml',
+configure_file(
+  input: 'app.gschema.xml.in',
+  output: '@0@.gschema.xml'.format(application_id),
+  configuration: app_conf,
+  install: true,
   install_dir: get_option('datadir') / 'glib-2.0/schemas',
 )
 

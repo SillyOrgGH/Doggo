@@ -82,6 +82,17 @@ template $DogWindow : Adw.ApplicationWindow {
                 margin-bottom: 15;
                 styles ["pill", "abandonbutton", "opaque"]
               }
+
+              Button clickerbutton {
+                action-name: "win.clickershow";
+                child: Adw.ButtonContent {
+                  label: "Clicker Mode";
+                  icon-name: "hand-touch-symbolic";
+                  halign: center;
+                };
+                margin-bottom: 15;
+                styles ["pill", "clickerbutton", "opaque"]
+              }
             };
           };
         };
@@ -123,7 +134,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo isn't very friendly right now.";
                 margin-bottom: 20;
-                styles ["title-4", "UnfriendlyText"]
+                styles ["title-3", "UnfriendlyText"]
               }
             };
           };
@@ -166,7 +177,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo is friendly right now.";
                 margin-bottom: 20;
-                styles ["title-4", "FriendlyText"]
+                styles ["title-3", "FriendlyText"]
               }
             };
           };
@@ -210,7 +221,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo loves you! ❤️";
                 margin-bottom: 20;
-                styles ["title-4", "FriendlyText"]
+                styles ["title-3", "FriendlyText"]
               }
             };
           };
@@ -254,7 +265,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo is feeling neutral right now.";
                 margin-bottom: 20;
-                styles ["title-4", "NeutralText"]
+                styles ["title-3", "NeutralText"]
               }
             };
           };
@@ -298,7 +309,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo is sleeping right now.";
                 margin-bottom: 20;
-                styles ["title-4", "NeutralText"]
+                styles ["title-3", "NeutralText"]
               }
             };
           };
@@ -342,7 +353,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo bit you!!";
                 margin-bottom: 20;
-                styles ["title-4", "UnfriendlyText"]
+                styles ["title-3", "UnfriendlyText"]
               }
             };
           };
@@ -386,7 +397,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo had a heart attack!!";
                 margin-bottom: 20;
-                styles ["title-4", "UnfriendlyText"]
+                styles ["title-3", "UnfriendlyText"]
               }
             };
           };
@@ -430,7 +441,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo likes the food";
                 margin-bottom: 15;
-                styles ["title-4", "FriendlyText"]
+                styles ["title-3", "FriendlyText"]
               }
             };
           };
@@ -474,7 +485,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo does not like the food";
                 margin-bottom: 15;
-                styles ["title-4", "UnfriendlyText"]
+                styles ["title-3", "UnfriendlyText"]
               }
             };
           };
@@ -518,7 +529,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "The Doggo died because of the food.";
                 margin-bottom: 15;
-                styles ["title-4", "UnfriendlyText"]
+                styles ["title-3", "UnfriendlyText"]
               }
             };
           };
@@ -562,7 +573,62 @@ template $DogWindow : Adw.ApplicationWindow {
               Label {
                 label: "How could you...";
                 margin-bottom: 20;
-                styles ["title-4", "UnfriendlyText"]
+                styles ["title-3", "UnfriendlyText"]
+              }
+            };
+          };
+        };
+      }
+
+      Adw.NavigationPage dog_clicker_page {
+        title: "Doggo Clicker Mode";
+        tag: "dog_clicker_page";
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Menu");
+              menu-model: primary_menu;
+            }
+          }
+          content:
+          Adw.Clamp {
+            maximum-size: 250;
+            child: Box {
+              orientation: vertical;
+              halign: center;
+              valign: center;
+              Image {
+                icon-name: "dog";
+                pixel-size: 196;
+                margin-bottom: 15;
+                styles ["icon-dropshadow"]
+              }
+
+              Label {
+                label: "Clicker Mode";
+                margin-bottom: 15;
+                styles ["title-1"]
+              }
+
+              Label clickslabel {
+                label: "0 Clicks";
+                margin-bottom: 20;
+                styles ["title-3"]
+              }
+
+              Button clickbutton {
+                action-name: "win.click";
+                child: Adw.ButtonContent {
+                  label: "Pet the Doggo";
+                  icon-name: "dog-symbolic";
+                  halign: center;
+                };
+                margin-bottom: 15;
+                styles ["pill", "petbutton", "opaque"]
               }
             };
           };
