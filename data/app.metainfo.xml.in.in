@@ -3,7 +3,7 @@
   <id>@appid@</id>
   <name>Doggo</name>
   <summary>GTK4 + Libadwaita Game themed around a dog</summary>
-  <developer_name>Silly Org, sungsphinx &amp; Contributors</developer_name>
+  <developer_name>Silly Org</developer_name>
   <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -25,6 +25,20 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="4.0" date="2023-12-19" type="stable">
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/4.0</url>
+      <description>
+        <p>This marks the 4th major release of Doggo</p>
+        <p>And nearly 400 installs??!? Well thanks, I guess 😅</p>
+        <p>Changes in this release:</p>
+        <ul>
+          <li>NEW: Clicker Mode (This was what the app was going to be originally, includes a secret for you to find)</li>
+          <li>Changed Issues URL to go to new the new issue templates URL</li>
+          <li>Changed Developer Name to be shorter (not sure if it will update on Flathub)</li>
+          <li>Fix child window's WM_CLASS not matching the parent window</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.3" date="2023-12-16" type="stable">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/3.3</url>
       <description>

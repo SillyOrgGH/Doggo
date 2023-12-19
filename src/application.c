@@ -75,10 +75,10 @@ dog_application_about_action (GSimpleAction *action,
                               GVariant      *parameter,
                               gpointer       user_data)
 {
-	static const char *developers[] = {"sungsphinx", NULL};
-	static const char *artists[] = {"Google (Noto Color Emoji: Dog, base for App Icon)", "sungsphinx (App Icon)", NULL};
-	const char *special_thanks[] = {"Bruno (My Dog)", NULL};
-	const char *copyright = "© 2023 Silly Org, 2023 sungsphinx";
+	static const char *developers[] = {"Dexter https://sungsphinx.codeberg.page", NULL};
+	static const char *artists[] = {"Dexter https://sungsphinx.codeberg.page", NULL};
+	const char *special_thanks[] = {"Bruno (A Real Doggo)", NULL};
+	const char *copyright = "© 2023 Silly Org, 2023 Dexter Reed (sungsphinx)";
 
 
 	DogApplication *self = user_data;
@@ -163,5 +163,9 @@ dog_application_init (DogApplication *self)
 	gtk_application_set_accels_for_action (GTK_APPLICATION (self),
 	                                       "win.abandon",
 	                                       (const char *[]) { "<primary>b", NULL });
+
+	gtk_application_set_accels_for_action (GTK_APPLICATION (self),
+	                                       "win.clickershow",
+	                                       (const char *[]) { "<primary>c", NULL });
 }
 
