@@ -7,7 +7,9 @@ steps:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - dnf install -y flatpak
+      - dnf install -y flatpak dbus-daemon
+      - mkdir /run/dbus
+      - dbus-daemon --system
       - flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - flatpak install --user -y org.flatpak.Builder
       - ls -la
