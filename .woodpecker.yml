@@ -7,7 +7,7 @@ steps:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - flatpak install org.flatpak.Builder
+      - flatpak install -y org.flatpak.Builder
       - flatpak run org.flatpak.Builder --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
       - flatpak build-bundle build-repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
       - ls -la
