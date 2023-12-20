@@ -4,6 +4,9 @@
 > **Warning**
 > Flatpak is the **only officially supported** way of distributing this app, **any bug reports by anyone who uses a non-flatpak version will be closed.**
 
+> **Note**
+> CI Builds will be available soon, they are WIP.
+
 [![Flathub](https://img.shields.io/flathub/v/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Flathub)][flathub]
 [![Flathub Installs](https://img.shields.io/flathub/downloads/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Installs)][flathub]
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
