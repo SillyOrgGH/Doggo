@@ -9,6 +9,7 @@ steps:
     commands:
       - dnf install -y flatpak dbus-daemon
       - chmod u+s /usr/bin/bwrap
+      - echo 15385 > /proc/sys/user/max_user_namespaces
       - mkdir /run/dbus
       - dbus-daemon --system
       - flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
