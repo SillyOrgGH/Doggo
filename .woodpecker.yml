@@ -1,13 +1,14 @@
 # Used: https://codeberg.org/TheEvilSkeleton/flatpak-hello-world
 steps:
   build:
-    image: docker.io/bilelmoussaoui/flatpak-github-actions
+    image: registry.fedoraproject.org/fedora:latest
     secrets: [access_token]
     when:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      - dnf install -y flatpak
+      - flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - flatpak install --user -y org.flatpak.Builder
       - ls -la
       - flatpak run org.flatpak.Builder --user --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
