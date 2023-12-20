@@ -7,8 +7,8 @@ steps:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - flatpak install -y org.flatpak.Builder
-      - flatpak run org.flatpak.Builder --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
-      - flatpak build-bundle build-repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
+      - flatpak install --user -y org.flatpak.Builder
       - ls -la
+      - flatpak run org.flatpak.Builder --user --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
+      - flatpak build-bundle build-repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
       - curl --user $CI_REPO_OWNER:$ACCESS_TOKEN --upload-file page.codeberg.SOrg.DogGTK.Devel.flatpak https://codeberg.org/api/packages/$CI_REPO/test_package/nightly/page.codeberg.SOrg.DogGTK.Devel.flatpak
