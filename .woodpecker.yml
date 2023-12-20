@@ -8,6 +8,7 @@ steps:
       event: [push, pull_request, tag]
     commands:
       - dnf install -y flatpak dbus-daemon
+      - chmod u+s /usr/bin/bwrap
       - mkdir /run/dbus
       - dbus-daemon --system
       - flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
