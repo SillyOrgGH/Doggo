@@ -10,7 +10,6 @@ steps:
       - apt-get update
       - DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y flatpak flatpak-builder sudo
       - useradd -mUd /var/lib/builder builder
-      - passwd -f -u builder
       - su - builder
       - sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - ls -la
