@@ -8,8 +8,7 @@ steps:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - echo "deb http://deb.debian.org/debian/ unstable main
-deb-src http://deb.debian.org/debian/ unstable main" >> /etc/apt/sources
+      - echo "deb http://deb.debian.org/debian/ unstable main deb-src http://deb.debian.org/debian/ unstable main" >> /etc/apt/sources
       - apt install -y flatpak flatpak-builder
       - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
