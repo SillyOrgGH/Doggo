@@ -8,6 +8,7 @@ steps:
       branch: main
       event: [push, pull_request, tag]
     commands:
+      - cat /etc/apt/sources.list
       - apt install -y flatpak flatpak-builder
       - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
