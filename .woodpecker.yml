@@ -1,16 +1,13 @@
 # Used: https://codeberg.org/TheEvilSkeleton/flatpak-hello-world
 steps:
   build:
-    image: docker.io/debian:trixie-slim
+    image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-45
     options: --privileged
     secrets: [access_token]
     when:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - apt update
-      - apt install -y flatpak flatpak-builder
-      - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
       - ls -la
       - flatpak-builder --disable-rofiles-fuse --install-deps-from=gnome-nightly --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
