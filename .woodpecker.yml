@@ -1,15 +1,19 @@
 # Used: https://codeberg.org/TheEvilSkeleton/flatpak-hello-world
 steps:
   build:
-    image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-45
-    options: --privileged
+    image: docker.io/debian:sid-slim
     secrets: [access_token]
     when:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - flatpak install -y org.flatpak.Builder
+      - apt-get update
+      - DEBIAN_FRONTEND=noninteractive apt-get install -y flatpak flatpak-builder
+      - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      - useradd -mUd /var/lib/builder builder
+      - passwd -f -u builder
+      - su - builder
       - ls -la
-      - flatpak run org.flatpak.Builder --disable-rofiles-fuse --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
+      - flatpak-builder --disable-rofiles-fuse --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
       - flatpak build-bundle build-repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
       - curl --user $CI_REPO_OWNER:$ACCESS_TOKEN --upload-file page.codeberg.SOrg.DogGTK.Devel.flatpak https://codeberg.org/api/packages/$CI_REPO/test_package/nightly/page.codeberg.SOrg.DogGTK.Devel.flatpak
