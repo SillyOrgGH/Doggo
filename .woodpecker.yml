@@ -1,14 +1,14 @@
 # Used: https://codeberg.org/TheEvilSkeleton/flatpak-hello-world
 steps:
   build:
-    image: registry.fedoraproject.org/fedora:latest
+    image: docker.io/debian:trixie-slim
     options: --privileged
     secrets: [access_token]
     when:
       branch: main
       event: [push, pull_request, tag]
     commands:
-      - dnf install -y flatpak flatpak-builder
+      - apt install -y flatpak flatpak-builder
       - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
       - ls -la
