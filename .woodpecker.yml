@@ -8,11 +8,11 @@ steps:
       event: [push, pull_request, tag]
     commands:
       - apt-get update
-      - DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y flatpak flatpak-builder
-      - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      - DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y flatpak flatpak-builder sudo
       - useradd -mUd /var/lib/builder builder
       - passwd -f -u builder
       - su - builder
+      - sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - ls -la
       - flatpak-builder --disable-rofiles-fuse --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
       - flatpak build-bundle build-repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
