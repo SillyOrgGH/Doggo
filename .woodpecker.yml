@@ -8,7 +8,7 @@ steps:
       event: [push, pull_request, tag]
     commands:
       - apt-get update
-      - DEBIAN_FRONTEND=noninteractive apt-get install -y flatpak flatpak-builder
+      - DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --no-install-suggests -y flatpak flatpak-builder
       - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       - useradd -mUd /var/lib/builder builder
       - passwd -f -u builder
