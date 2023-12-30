@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [main]
+  pull_request:
+name: Nightly Flatpak Build
+jobs:
+  flatpak:
+    name: "Flatpak"
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-nightly
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v4
+    - uses: flathub/flatpak-github-actions/flatpak-builder@v6
+      with:
+        bundle: doggo.flatpak
+        manifest-path: build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
