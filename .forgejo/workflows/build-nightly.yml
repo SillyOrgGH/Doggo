@@ -6,7 +6,7 @@ name: Nightly Flatpak Build
 jobs:
   flatpak:
     name: "Flatpak"
-    runs-on: docker.io/ubuntu:latest
+    runs-on: docker.io/debian:latest
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-nightly
       options: --privileged
