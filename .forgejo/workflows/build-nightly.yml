@@ -11,7 +11,7 @@ jobs:
       options: --privileged
     steps:
     - uses: actions/checkout@v4
-    - uses: flathub/flatpak-github-actions/flatpak-builder@v6
+    - uses: ghcr.io/flathub-infra/flatpak-github-actions/flatpak-builder@v6
       with:
         bundle: doggo.flatpak
         manifest-path: build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
