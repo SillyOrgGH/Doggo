@@ -7,7 +7,7 @@ jobs:
   flatpak:
     name: "Flatpak"
     container:
-      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-nightly
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-45
       options: --privileged
     steps:
     - uses: actions/checkout@v4
