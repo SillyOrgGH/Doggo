@@ -16,5 +16,5 @@ jobs:
           fetch-depth: 0
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
-          target_repo_url: "codeberg.org/SOrg/Doggo.git"
+          target_repo_url: "https://codeberg.org/SOrg/Doggo.git"
           ssh_private_key: ${{ secrets.CODEBERG_MIRROR_TOKEN }}
