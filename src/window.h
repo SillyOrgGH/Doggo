@@ -1,4 +1,4 @@
-/* dog-window.h
+/* window.h
  *
  * Copyright 2023 sungsphinx
  *

@@ -1,4 +1,4 @@
-/* dog-window.c
+/* window.c
  *
  * Copyright 2023 sungsphinx
  *
@@ -69,7 +69,7 @@ enum Results_Feed {
 };
 
 int clickamount;
-char clickamountmax[1000000]; // Set it to a large number just in case a no-life gets way too many clicks.
+char clickamountchars[1000000];
 
 static void
 display_result_pet (DogWindow *self) {
@@ -163,18 +163,21 @@ clicker_show (DogWindow *self) {
 }
 
 static void
+clickamount_increment (DogWindow *self, int amount) {
+	clickamount = clickamount + amount;
+	sprintf(clickamountchars, "%d Clicks", clickamount);
+	g_print ("Click Amount Incremented: %s\n", clickamountchars);
+	gtk_label_set_label (self->clickslabel, clickamountchars);
+}
+
+static void
 click (DogWindow *self) {
-	clickamount = clickamount + 1;
-	sprintf(clickamountmax, "%d Clicks", clickamount);
-	g_print ("%s\n", clickamountmax);
-	gtk_label_set_label (self->clickslabel, clickamountmax);
+	clickamount_increment (self, 1);
 }
 
 static void
 secret1 (DogWindow *self) {
-	clickamount = clickamount + 1000000;
-	sprintf(clickamountmax, "%d Clicks", clickamount);
-	gtk_label_set_label (self->clickslabel, clickamountmax);
+	clickamount_increment (self, 1000);
 }
 
 static void
@@ -186,7 +189,7 @@ dog_window_init (DogWindow *self)
 	register_gaction (self, "pet", G_CALLBACK(pet));
 	register_gaction (self, "feed", G_CALLBACK(feed));
 	register_gaction (self, "abandon", G_CALLBACK(abandon));
+	register_gaction (self, "help", G_CALLBACK(secret1));
 	register_gaction (self, "clickershow", G_CALLBACK(clicker_show));
 	register_gaction (self, "click", G_CALLBACK(click));
-	register_gaction (self, "help", G_CALLBACK(secret1));
 }
