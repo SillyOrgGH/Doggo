@@ -5,7 +5,7 @@
     </filter>
     <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="17.000003" x2="114.53818618316" y1="66.81357273973" y2="66.81357273973">
         <stop offset="0" stop-color="#ffba48"/>
-        <stop offset="0.5" stop-color="#ff9348"/>
+        <stop offset="0.5" stop-color="#ff7f37"/>
         <stop offset="1" stop-color="#ffba48"/>
     </linearGradient>
     <clipPath id="c">
