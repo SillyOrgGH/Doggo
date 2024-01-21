@@ -75,8 +75,8 @@ dog_application_about_action (GSimpleAction *action,
                               GVariant      *parameter,
                               gpointer       user_data)
 {
-	static const char *developers[] = {"Dexter https://sungsphinx.codeberg.page", NULL};
-	static const char *artists[] = {"Dexter https://sungsphinx.codeberg.page", NULL};
+	static const char *developers[] = {"Dexter Reed https://sungsphinx.codeberg.page", NULL};
+	static const char *artists[] = {"Dexter Reed https://sungsphinx.codeberg.page", NULL};
 	const char *special_thanks[] = {"Bruno (A Real Doggo)", NULL};
 	const char *copyright = "© 2023 Silly Org, 2023 Dexter Reed (sungsphinx)";
 
