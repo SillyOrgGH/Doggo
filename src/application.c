@@ -96,7 +96,7 @@ dog_application_about_action (GSimpleAction *action,
 
 	adw_about_window_set_version (ADW_ABOUT_WINDOW (about), VERSION);
 
-	adw_about_window_set_comments (ADW_ABOUT_WINDOW (about), "Clicker &amp; Chance Game");
+	adw_about_window_set_comments (ADW_ABOUT_WINDOW (about), "Clicker &amp; chance game");
 
 	adw_about_window_add_link (ADW_ABOUT_WINDOW (about),
                                     _("_Silly Org Website"),
