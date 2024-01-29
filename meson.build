@@ -29,7 +29,8 @@ endif
 
 application_id = 'page.codeberg.SOrg.DogGTK@0@'.format(profile)
 application_name = 'Doggo'
-developer_name = 'Silly Org, sungsphinx & Contributors'
+developer_name = 'Silly Org'
+version_codename = 'low-up-low'
 
 prefix = get_option('prefix')
 datadir = prefix / get_option('datadir')
@@ -40,6 +41,7 @@ config_h.set_quoted('APPLICATION_ID', application_id)
 config_h.set_quoted('APPLICATION_NAME', application_name)
 config_h.set_quoted('DEVELOPER_NAME', developer_name)
 config_h.set_quoted('VERSION', '@0@@1@'.format(meson.project_version(), version_suffix))
+config_h.set_quoted('VERSION_CODENAME', '@0@'.format(version_codename))
 config_h.set_quoted('VERSION_NO_SUFFIX', '@0@'.format(meson.project_version()))
 config_h.set_quoted('GETTEXT_PACKAGE', 'dog')
 config_h.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))

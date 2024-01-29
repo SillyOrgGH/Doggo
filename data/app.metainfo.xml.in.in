@@ -33,6 +33,7 @@
     <release version="4.2" date="2024-01-29" type="stable">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/4.2</url>
       <description>
+        <p>Codename: low-up-low. This refers to one of the quality guidelines ("No weird formatting") for an app's summary, also low(ercase)-up(percase)-low(ercase).</p>
         <p>This release changes the summary slightly to try and fit the new Flathub Guidelines.</p>
       </description>
     </release>

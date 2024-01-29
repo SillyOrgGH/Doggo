@@ -89,6 +89,7 @@ dog_generate_debug_info (void)
   g_string_append (string, "\n");
 
   g_string_append_printf (string, APPLICATION_NAME ": %s\n", VERSION);
+  g_string_append_printf (string, "Codename: %s\n", VERSION_CODENAME);
   g_string_append (string, "\n");
 
   g_string_append (string, "Compiled against:\n");
