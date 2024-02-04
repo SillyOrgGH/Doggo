@@ -10,5 +10,4 @@ jobs:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-45
       options: --privileged
     steps:
-    - uses: actions/checkout@v4
     - run: flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json && flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
