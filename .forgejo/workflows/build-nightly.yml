@@ -10,4 +10,4 @@ jobs:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-45
       options: --privileged
     steps:
-    - run: ls
+    - run: git clone https://codeberg.org/SOrg/Doggo.git && ls
