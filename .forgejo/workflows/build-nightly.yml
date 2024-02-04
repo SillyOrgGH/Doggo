@@ -11,7 +11,5 @@ jobs:
       options: --privileged
     steps:
     - uses: actions/checkout@v4
-    - uses: https://github.com/flatpak/flatpak-github-actions@v6
-      with:
-        bundle: doggo.flatpak
-        manifest-path: build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
+      run: flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
+      run: flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
