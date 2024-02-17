@@ -3,7 +3,11 @@
   <id>@appid@</id>
   <name>Doggo</name>
   <summary>Clicker &amp; chance game</summary>
+  <!-- developer_name tag deprecated with AppStream 1.0 -->
   <developer_name>Silly Org</developer_name>
+  <developer id="sorg.codeberg.page">
+    <name>Silly Org</name>
+  </developer>
   <launchable type="desktop-id">@appid@.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -157,6 +161,9 @@ New features &amp; changes below:</p>
     <control>tablet</control>
     <control>touch</control>
   </supports>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
   <content_rating type="oars-1.1"/>
   <provides>
     <binary>doggo</binary>
