@@ -41,7 +41,7 @@ dog_window_class_init (DogWindowClass *klass)
 {
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
-	gtk_widget_class_set_template_from_resource (widget_class, "/page/codeberg/SOrg/DogGTK/window.ui");
+	gtk_widget_class_set_template_from_resource (widget_class, "/app/drey/Doggo/window.ui");
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, header_bar);
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, navigationview1);
 	gtk_widget_class_bind_template_child (widget_class, DogWindow, clickslabel);

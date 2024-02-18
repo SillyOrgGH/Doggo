@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/page/codeberg/SOrg/DogGTK">
+  <gresource prefix="/app/drey/Doggo">
     <file alias="window.ui" preprocess="xml-stripblanks">ui/window.ui</file>
     <file alias="gtk/help-overlay.ui" preprocess="xml-stripblanks">ui/shortcuts.ui</file>
     <file alias="metainfo.xml" preprocess="xml-stripblanks">@appid@.metainfo.xml</file>

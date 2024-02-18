@@ -39,7 +39,7 @@ dog_application_new (const char        *application_id,
 	return g_object_new (DOG_TYPE_APPLICATION,
 	                     "application-id", APPLICATION_ID,
 	                     "flags", G_APPLICATION_DEFAULT_FLAGS,
-	                     "resource-base-path", "/page/codeberg/SOrg/DogGTK",
+	                     "resource-base-path", "/app/drey/Doggo",
 	                     NULL);
 }
 
@@ -92,7 +92,7 @@ dog_application_about_action (GSimpleAction *action,
 
 	window = gtk_application_get_active_window (GTK_APPLICATION (self));
 
-	about = adw_about_window_new_from_appdata ("/page/codeberg/SOrg/DogGTK/metainfo.xml", VERSION_NO_SUFFIX);
+	about = adw_about_window_new_from_appdata ("/app/drey/Doggo/metainfo.xml", VERSION_NO_SUFFIX);
 
 	adw_about_window_set_version (ADW_ABOUT_WINDOW (about), VERSION);
 
