@@ -27,7 +27,7 @@ else
   version_suffix = ''
 endif
 
-application_id = 'page.codeberg.SOrg.DogGTK@0@'.format(profile)
+application_id = 'app.drey.Doggo@0@'.format(profile)
 application_name = 'Doggo'
 developer_name = 'Silly Org'
 version_codename = 'low-up-low'
@@ -43,7 +43,7 @@ config_h.set_quoted('DEVELOPER_NAME', developer_name)
 config_h.set_quoted('VERSION', '@0@@1@'.format(meson.project_version(), version_suffix))
 config_h.set_quoted('VERSION_CODENAME', '@0@'.format(version_codename))
 config_h.set_quoted('VERSION_NO_SUFFIX', '@0@'.format(meson.project_version()))
-config_h.set_quoted('GETTEXT_PACKAGE', 'dog')
+config_h.set_quoted('GETTEXT_PACKAGE', 'doggo')
 config_h.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 config_h.set_quoted('PROFILE', profile)
 configure_file(output: 'config.h', configuration: config_h)

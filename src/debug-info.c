@@ -148,6 +148,7 @@ dog_generate_debug_info (void)
     g_string_append_printf (string, "- Arch: %s\n", arch);
     g_string_append_printf (string, "- Flatpak version: %s\n", flatpak_version);
     g_string_append_printf (string, "- Devel: %s\n", devel ? "yes" : "no");
+    g_string_append_printf (string, "- Application ID: %s\n", APPLICATION_ID);
     g_string_append (string, "\n");
 
     g_free (runtime);

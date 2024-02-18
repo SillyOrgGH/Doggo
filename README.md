@@ -1,18 +1,18 @@
 <!-- Definitions -->
-[flathub]: https://flathub.org/apps/page.codeberg.SOrg.DogGTK
+[flathub]: https://flathub.org/apps/app.drey.Doggo
 <!-- End Defenitions -->
 > **Warning**
 > Flatpak is the **only officially supported** way of distributing this app, **any bug reports by anyone who uses a non-flatpak version will be closed.**
 
-[![Flathub](https://img.shields.io/flathub/v/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Flathub)][flathub]
-[![Flathub Installs](https://img.shields.io/flathub/downloads/page.codeberg.SOrg.DogGTK?logo=flathub&logoColor=white&label=Installs)][flathub]
+[![Flathub](https://img.shields.io/flathub/v/app.drey.Doggo?logo=flathub&logoColor=white&label=Flathub)][flathub]
+[![Flathub Installs](https://img.shields.io/flathub/downloads/app.drey.Doggo?logo=flathub&logoColor=white&label=Installs)][flathub]
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
 [![Please don't upload to GitHub](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/NoGitHubBadgeORIGINAL.svg)](https://nogithub.codeberg.page)
 [![License: GPL-3.0-or-later](https://codeberg.org/SOrg/RepoContent/raw/branch/content/svgs/GPLv3OrLaterBadge.svg)](https://codeberg.org/SOrg/DogQt/src/branch/main/LICENSE)
 [![Flatpak (Linux)](https://img.shields.io/static/v1?message=Flatpak&color=4A90D9&logo=Flatpak&logoColor=FFFFFF&label=Build%20A)](#install)
 <!-- [![Pipeline Status](https://ci.codeberg.org/api/badges/12896/status.svg)](https://ci.codeberg.org/repos/12896) -->
 
-<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/Doggo/raw/branch/main/data/icons/hicolor/scalable/apps/page.codeberg.SOrg.DogGTK.svg" width="120" height="120" align="left">
+<img style="vertical-align: middle;" src="https://codeberg.org/SOrg/Doggo/raw/branch/main/data/icons/hicolor/scalable/apps/app.drey.Doggo.svg" width="120" height="120" align="left">
 
 # Doggo
 Clicker &amp; chance game</br>[Silly Org Website](https://sorg.codeberg.page) · [Submit Bug Report or Feature Request](https://codeberg.org/SOrg/Doggo/issues/new/choose) · [Install](#install) · [Credits](#credits) · [Funny Dog (Bruno)](https://codeberg.org/SOrg/Doggo/raw/branch/main/data/ui/images/bjrunoada.jpg)
@@ -49,25 +49,25 @@ flatpak install runtime/org.gnome.Platform/[x86_64/aarch64]/master
 ```
 ### (Choose x86_64 for 64/32bit, aarch64 for arm64)
 
-**3.** Download the [Flatpak Manifest](build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json) and make a folder to put it in.
+**3.** Download the [Flatpak Manifest](build-aux/flatpak/app.drey.Doggo.Devel.json) and make a folder to put it in.
 
 **4.** Open a terminal in that folder and choose one of the following to run:
 
 * **4a.** Install Directly: 
 ```
-flatpak-builder --install --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
+flatpak-builder --install --force-clean build-dir app.drey.Doggo.Devel.json
 ```
 
 * **4b.** Build Bundle: 
 
 ```
-flatpak-builder --repo=repo --force-clean build-dir page.codeberg.SOrg.DogGTK.Devel.json
+flatpak-builder --repo=repo --force-clean build-dir app.drey.Doggo.Devel.json
 ```
 
 Then run:
 
 ```
-flatpak build-bundle repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
+flatpak build-bundle repo app.drey.Doggo.Devel.flatpak app.drey.Doggo.Devel
 ``` 
 This will create a bundle (*.flatpak). Read more about single-file bundles [here](https://docs.flatpak.org/en/latest/single-file-bundles.html).
 

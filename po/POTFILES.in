@@ -1,0 +1,6 @@
+data/@appid@.desktop.in
+data/@appid@.appdata.xml.in
+data/@appid@.gschema.xml
+src/main.c
+src/window.c
+src/window.blp

@@ -1,5 +1,5 @@
 {
-    "app-id": "page.codeberg.SOrg.DogGTK.Devel",
+    "app-id": "app.drey.Doggo.Devel",
     "runtime": "org.gnome.Platform",
     "runtime-version": "45",
     "sdk": "org.gnome.Sdk",

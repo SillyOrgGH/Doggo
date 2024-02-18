@@ -10,5 +10,5 @@ steps:
       - apk add flatpak flatpak-builder
       - flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       - ls -la
-      - flatpak-builder --disable-rofiles-fuse --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/page.codeberg.SOrg.DogGTK.Devel.json
-      - flatpak build-bundle build-repo page.codeberg.SOrg.DogGTK.Devel.flatpak page.codeberg.SOrg.DogGTK.Devel
+      - flatpak-builder --disable-rofiles-fuse --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir build-aux/flatpak/app.drey.Doggo.Devel.json
+      - flatpak build-bundle build-repo app.drey.Doggo.Devel.flatpak app.drey.Doggo.Devel
