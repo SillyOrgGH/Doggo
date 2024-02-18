@@ -4,6 +4,9 @@
 > **Warning**
 > Flatpak is the **only officially supported** way of distributing this app, **any bug reports by anyone who uses a non-flatpak version will be closed.**
 
+> **Note**
+> Doggo's app id is being transitioned over to `app.drey.Doggo`, go [here](https://flathub.org/apps/page.codeberg.SOrg.DogGTK) for the current Flathub page
+
 [![Flathub](https://img.shields.io/flathub/v/app.drey.Doggo?logo=flathub&logoColor=white&label=Flathub)][flathub]
 [![Flathub Installs](https://img.shields.io/flathub/downloads/app.drey.Doggo?logo=flathub&logoColor=white&label=Installs)][flathub]
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
