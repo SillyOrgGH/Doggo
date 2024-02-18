@@ -1,6 +1,6 @@
 project('doggo', 'c',
           license: 'GPL3+',
-          version: '4.2',
+          version: '4.2.2',
     meson_version: '>= 0.62.0',
   default_options: [ 'warning_level=2', 'werror=false', 'c_std=gnu11', ],
 )
@@ -30,7 +30,7 @@ endif
 application_id = 'app.drey.Doggo@0@'.format(profile)
 application_name = 'Doggo'
 developer_name = 'Silly Org'
-version_codename = 'low-up-low'
+version_codename = 'Drey'
 
 prefix = get_option('prefix')
 datadir = prefix / get_option('datadir')
