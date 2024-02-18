@@ -46,14 +46,14 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "Choose A Path Below";
+                label: "Choose an action";
                 margin-bottom: 20;
               }
 
               Button petbutton {
                 action-name: "win.pet";
                 child: Adw.ButtonContent {
-                  label: "Pet the Doggo";
+                  label: "Pet Doggo";
                   icon-name: "dog-symbolic";
                   halign: center;
                 };
@@ -64,7 +64,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Button feedbutton {
                 action-name: "win.feed";
                 child: Adw.ButtonContent {
-                  label: "Feed the Doggo";
+                  label: "Feed Doggo";
                   icon-name: "food-sausage";
                   halign: center;
                 };
@@ -75,7 +75,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Button abandonbutton {
                 action-name: "win.abandon";
                 child: Adw.ButtonContent {
-                  label: "Abandon the Doggo";
+                  label: "Abandon Doggo";
                   icon-name: "ghost";
                   halign: center;
                 };
@@ -132,7 +132,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo isn't very friendly right now.";
+                label: "The Doggo isn't very friendly right now";
                 margin-bottom: 20;
                 styles ["title-3", "UnfriendlyText"]
               }
@@ -175,7 +175,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo is friendly right now.";
+                label: "The Doggo is friendly right now";
                 margin-bottom: 20;
                 styles ["title-3", "FriendlyText"]
               }
@@ -263,7 +263,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo is feeling neutral right now.";
+                label: "The Doggo is feeling neutral right now";
                 margin-bottom: 20;
                 styles ["title-3", "NeutralText"]
               }
@@ -307,7 +307,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo is sleeping right now.";
+                label: "The Doggo is sleeping right now";
                 margin-bottom: 20;
                 styles ["title-3", "NeutralText"]
               }
@@ -389,7 +389,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "Beep.. beep.. beep.. beeeeep";
+                label: "Beep.. Beep.. Beep.. Beeeeep";
                 margin-bottom: 15;
                 styles ["title-1", "UnfriendlyText"]
               }
@@ -405,7 +405,7 @@ template $DogWindow : Adw.ApplicationWindow {
       }
 
       Adw.NavigationPage dog_food_page {
-        title: "Doggo Likes The Food";
+        title: "Doggo Likes Your Food";
         tag: "dog_food_page";
         child: Adw.ToolbarView {
           [top]
@@ -439,7 +439,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo likes the food";
+                label: "The Doggo likes your food";
                 margin-bottom: 15;
                 styles ["title-3", "FriendlyText"]
               }
@@ -449,7 +449,7 @@ template $DogWindow : Adw.ApplicationWindow {
       }
 
       Adw.NavigationPage dog_dislikefood_page {
-        title: "Doggo Dislikes The Food";
+        title: "Doggo Dislikes Your Food";
         tag: "dog_dislikefood_page";
         child: Adw.ToolbarView {
           [top]
@@ -483,7 +483,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo does not like the food";
+                label: "The Doggo does not like your food";
                 margin-bottom: 15;
                 styles ["title-3", "UnfriendlyText"]
               }
@@ -527,7 +527,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "The Doggo died because of the food.";
+                label: "The Doggo died because of your food";
                 margin-bottom: 15;
                 styles ["title-3", "UnfriendlyText"]
               }
@@ -565,7 +565,7 @@ template $DogWindow : Adw.ApplicationWindow {
               }
 
               Label {
-                label: "You abandoned the Doggo";
+                label: "You Abandoned Doggo";
                 margin-bottom: 15;
                 styles ["title-1", "UnfriendlyText"]
               }
@@ -623,7 +623,7 @@ template $DogWindow : Adw.ApplicationWindow {
               Button clickbutton {
                 action-name: "win.click";
                 child: Adw.ButtonContent {
-                  label: "Pet the Doggo";
+                  label: "Pet Doggo";
                   icon-name: "dog-symbolic";
                   halign: center;
                 };
