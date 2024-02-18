@@ -34,6 +34,13 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="4.2.2" date="2024-02-18" type="stable">
+      <url>https://codeberg.org/SOrg/Doggo/releases/tag/4.2.2</url>
+      <description>
+        <p>This release is codenamed Drey, referring to the new app ID app.drey.Doggo</p>
+        <p>The app icon has been polished, and the labels in the app have been corrected by Bart Gravendeel (aka Monster) to comply with the GNOME HIG</p>
+      </description>
+    </release>
     <release version="4.2" date="2024-01-29" type="stable">
       <url>https://codeberg.org/SOrg/Doggo/releases/tag/4.2</url>
       <description>
