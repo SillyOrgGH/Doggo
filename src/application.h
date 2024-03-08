@@ -1,6 +1,6 @@
 /* application.h
  *
- * Copyright 2023 sungsphinx
+ * Copyright 2024 sungsphinx, 2023-2024 Silly Org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,11 +24,11 @@
 
 G_BEGIN_DECLS
 
-#define DOG_TYPE_APPLICATION (dog_application_get_type())
+#define DOGGO_TYPE_APPLICATION (doggo_application_get_type())
 
-G_DECLARE_FINAL_TYPE (DogApplication, dog_application, DOG, APPLICATION, AdwApplication)
+G_DECLARE_FINAL_TYPE (DoggoApplication, doggo_application, DOGGO, APPLICATION, AdwApplication)
 
-DogApplication *dog_application_new (const char        *application_id,
+DoggoApplication *doggo_application_new (const char        *application_id,
                                      GApplicationFlags  flags);
 
 G_END_DECLS

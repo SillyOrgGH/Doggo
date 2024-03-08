@@ -1,6 +1,6 @@
 /* debug-info.c
  *
- * Copyright 2023 sungsphinx
+ * Copyright 2024 sungsphinx, 2023-2024 Silly Org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -78,7 +78,7 @@ get_flatpak_info (const char *group,
 #endif
 
 char *
-dog_generate_debug_info (void)
+doggo_generate_debug_info (void)
 {
   GString *string = g_string_new (NULL);
 #ifndef G_OS_WIN32

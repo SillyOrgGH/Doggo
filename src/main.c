@@ -1,6 +1,6 @@
 /* main.c
  *
- * Copyright 2023 sungsphinx
+ * Copyright 2024 sungsphinx, 2023-2024 Silly Org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ int
 main (int   argc,
       char *argv[])
 {
-	g_autoptr(DogApplication) app = NULL;
+	g_autoptr(DoggoApplication) app = NULL;
 	int ret;
 
 	bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -37,7 +37,7 @@ main (int   argc,
 	g_set_application_name (_(APPLICATION_NAME));
 	g_set_prgname (APPLICATION_ID);
 
-	app = dog_application_new (APPLICATION_ID, G_APPLICATION_DEFAULT_FLAGS);
+	app = doggo_application_new (APPLICATION_ID, G_APPLICATION_DEFAULT_FLAGS);
 	ret = g_application_run (G_APPLICATION (app), argc, argv);
 
 	return ret;

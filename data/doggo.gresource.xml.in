@@ -6,18 +6,10 @@
     <file alias="metainfo.xml" preprocess="xml-stripblanks">@appid@.metainfo.xml</file>
     <file alias="bjrunoada.jpg">ui/images/bjrunoada.jpg</file>
     <file alias="style.css">ui/style.css</file>
-    <file alias="icons/dog.svg" preprocess="xml-stripblanks">ui/icons/dog.svg</file>
-    <file alias="icons/dog-neutral.svg" preprocess="xml-stripblanks">ui/icons/dog-neutral.svg</file>
-    <file alias="icons/dog-sleep.svg" preprocess="xml-stripblanks">ui/icons/dog-sleep.svg</file>
-    <file alias="icons/dog-affectionate.svg" preprocess="xml-stripblanks">ui/icons/dog-affectionate.svg</file>
-    <file alias="icons/dog-angry.svg" preprocess="xml-stripblanks">ui/icons/dog-angry.svg</file>
-    <file alias="icons/dog-scared.svg" preprocess="xml-stripblanks">ui/icons/dog-scared.svg</file>
-    <file alias="icons/dog-dead.svg" preprocess="xml-stripblanks">ui/icons/dog-dead.svg</file>
-    <file alias="icons/dog-devel.svg" preprocess="xml-stripblanks">ui/icons/dog-devel.svg</file>
-    <file alias="icons/dog-symbolic.svg" preprocess="xml-stripblanks">ui/icons/dog-symbolic.svg</file>
-    <file alias="icons/food-sausage.svg" preprocess="xml-stripblanks">ui/icons/food-sausage.svg</file>
-    <file alias="icons/ghost.svg" preprocess="xml-stripblanks">ui/icons/ghost.svg</file>
-    <file alias="icons/arrow-left.svg" preprocess="xml-stripblanks">ui/icons/arrow-left.svg</file>
-    <file alias="icons/hand-touch-symbolic.svg" preprocess="xml-stripblanks">ui/icons/hand-touch-symbolic.svg</file>
+    <file alias="icons/scalable/actions/doggo-symbolic.svg" preprocess="xml-stripblanks">ui/icons/doggo-symbolic.svg</file>
+    <file alias="icons/scalable/actions/food-sausage.svg" preprocess="xml-stripblanks">ui/icons/food-sausage.svg</file>
+    <file alias="icons/scalable/actions/ghost.svg" preprocess="xml-stripblanks">ui/icons/ghost.svg</file>
+    <file alias="icons/scalable/actions/arrow-left.svg" preprocess="xml-stripblanks">ui/icons/arrow-left.svg</file>
+    <file alias="icons/scalable/actions/hand-touch-symbolic.svg" preprocess="xml-stripblanks">ui/icons/hand-touch-symbolic.svg</file>
   </gresource>
 </gresources>

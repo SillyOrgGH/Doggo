@@ -1,7 +1,7 @@
 {
     "app-id": "app.drey.Doggo.Devel",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "master",
     "sdk": "org.gnome.Sdk",
     "command": "doggo",
     "desktop-file-name-suffix": " (Nightly)",
@@ -24,7 +24,7 @@
         "*.a"
     ],
     "modules": [
-	{
+	      {
             "name": "blueprint-compiler",
             "buildsystem": "meson",
             "cleanup": ["*"],
@@ -32,10 +32,10 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-                    "tag": "v0.10.0"
+                    "branch": "main"
                 }
             ]
-	},
+	      },
         {
             "name": "doggo",
             "builddir": true,

@@ -1,22 +1,26 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $DogWindow : Adw.ApplicationWindow {
-  default-width: 600;
-  default-height: 600;
+template $DoggoWindow : Adw.ApplicationWindow {
+  default-width: 500;
+  default-height: 595;
+  width-request: 360;
+  height-request: 294;
+
   content:
   Adw.ToolbarView {
     content:
 
     Adw.NavigationView navigationview1 {
-      Adw.NavigationPage dog_home_page {
+      Adw.NavigationPage home_page {
         tag: "home_page";
-        title: "Home";
+        title: "Welcome";
         vexpand: true;
         hexpand: true;
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar {
+            show-title: false;
             [end]
             MenuButton {
               primary: true;
@@ -26,80 +30,77 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog";
-                pixel-size: 196;
-                margin-bottom: 10;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label title {
-                label: "Doggo";
-                margin-bottom: 15;
-                styles ["title-1"]
-              }
+                Label title {
+                  label: "Welcome";
+                  margin-top: 5;
+                  margin-bottom: 15;
+                  styles ["title-1"]
+                }
 
-              Label {
-                label: "Choose an action";
-                margin-bottom: 20;
-              }
+                Label description {
+                  label: "Choose an action";
+                  margin-bottom: 15;
+                }
 
-              Button petbutton {
-                action-name: "win.pet";
-                child: Adw.ButtonContent {
-                  label: "Pet Doggo";
-                  icon-name: "dog-symbolic";
-                  halign: center;
-                };
-                margin-bottom: 15;
-                styles ["pill", "petbutton", "opaque"]
-              }
+                Button petbutton {
+                  action-name: "win.pet";
+                  child: Adw.ButtonContent {
+                    label: "Pet";
+                    icon-name: "doggo-symbolic";
+                    halign: center;
+                  };
+                  margin-bottom: 15;
+                  styles ["pill", "petbutton", "opaque"]
+                }
 
-              Button feedbutton {
-                action-name: "win.feed";
-                child: Adw.ButtonContent {
-                  label: "Feed Doggo";
-                  icon-name: "food-sausage";
-                  halign: center;
-                };
-                margin-bottom: 15;
-                styles ["pill", "feedbutton", "opaque"]
-              }
+                Button feedbutton {
+                  action-name: "win.feed";
+                  child: Adw.ButtonContent {
+                    label: "Feed";
+                    icon-name: "food-sausage";
+                    halign: center;
+                  };
+                  margin-bottom: 15;
+                  styles ["pill", "feedbutton", "opaque"]
+                }
 
-              Button abandonbutton {
-                action-name: "win.abandon";
-                child: Adw.ButtonContent {
-                  label: "Abandon Doggo";
-                  icon-name: "ghost";
-                  halign: center;
-                };
-                margin-bottom: 15;
-                styles ["pill", "abandonbutton", "opaque"]
-              }
+                Button abandonbutton {
+                  action-name: "win.abandon";
+                  child: Adw.ButtonContent {
+                    label: "Abandon";
+                    icon-name: "ghost";
+                    halign: center;
+                  };
+                  margin-bottom: 15;
+                  styles ["pill", "abandonbutton", "opaque"]
+                }
 
-              Button clickerbutton {
-                action-name: "win.clickershow";
-                child: Adw.ButtonContent {
-                  label: "Clicker Mode";
-                  icon-name: "hand-touch-symbolic";
-                  halign: center;
-                };
-                margin-bottom: 15;
-                styles ["pill", "clickerbutton", "opaque"]
-              }
-            };
+                Button clickerbutton {
+                  action-name: "win.clicker";
+                  child: Adw.ButtonContent {
+                    label: "Clicker";
+                    icon-name: "hand-touch-symbolic";
+                    halign: center;
+                  };
+                  margin-bottom: 15;
+                  styles ["pill", "clickbutton", "opaque"]
+                }
+              };
+            }
           };
         };
       }
-      Adw.NavigationPage dog_unfriendly_page {
+      Adw.NavigationPage unfriendly_page {
         title: "Doggo Is Unfriendly";
-        tag: "dog_unfriendly_page";
+        tag: "unfriendly_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar_unfriendly {
@@ -112,37 +113,33 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-angry";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "GRRRRRR...";
-                margin-bottom: 15;
-                styles ["title-1", "UnfriendlyText"]
-              }
+                Label {
+                  label: "GRRRRRR...";
+                  margin-bottom: 15;
+                  styles ["title-1", "UnfriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo isn't very friendly right now";
-                margin-bottom: 20;
-                styles ["title-3", "UnfriendlyText"]
-              }
-            };
+                Label {
+                  label: "Doggo isn't very friendly right now";
+                  margin-bottom: 20;
+                  styles ["title-3", "UnfriendlyText"]
+                }
+              };
+            }
           };
         };
       }
-      Adw.NavigationPage dog_friendly_page {
+      Adw.NavigationPage friendly_page {
         title: "Doggo Is Friendly";
-        tag: "dog_friendly_page";
+        tag: "friendly_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar_friendly {
@@ -155,38 +152,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label title-friendly {
-                label: "Woof Woof!";
-                margin-bottom: 15;
-                styles ["title-1", "FriendlyText"]
-              }
+                Label title-friendly {
+                  label: "Woof Woof!";
+                  margin-bottom: 15;
+                  styles ["title-1", "FriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo is friendly right now";
-                margin-bottom: 20;
-                styles ["title-3", "FriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo is friendly right now";
+                  margin-bottom: 20;
+                  styles ["title-3", "FriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_affectionate_page {
+      Adw.NavigationPage affectionate_page {
         title: "Doggo Loves You";
-        tag: "dog_affectionate_page";
+        tag: "affectionate_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -199,38 +192,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-affectionate";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "Woooof!! ";
-                margin-bottom: 15;
-                styles ["title-1", "FriendlyText"]
-              }
+                Label {
+                  label: "Woooof!! ";
+                  margin-bottom: 15;
+                  styles ["title-1", "FriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo loves you! ❤️";
-                margin-bottom: 20;
-                styles ["title-3", "FriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo loves you! ❤️";
+                  margin-bottom: 20;
+                  styles ["title-3", "FriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_neutral_page {
+      Adw.NavigationPage neutral_page {
         title: "Doggo Is Neutral";
-        tag: "dog_neutral_page";
+        tag: "neutral_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -243,38 +232,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-neutral";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "Woof Woof...";
-                margin-bottom: 15;
-                styles ["title-1", "NeutralText"]
-              }
+                Label {
+                  label: "Woof Woof...";
+                  margin-bottom: 15;
+                  styles ["title-1", "NeutralText"]
+                }
 
-              Label {
-                label: "The Doggo is feeling neutral right now";
-                margin-bottom: 20;
-                styles ["title-3", "NeutralText"]
-              }
-            };
+                Label {
+                  label: "The Doggo is feeling neutral right now";
+                  margin-bottom: 20;
+                  styles ["title-3", "NeutralText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_sleeping_page {
+      Adw.NavigationPage sleeping_page {
         title: "Doggo Is Sleeping";
-        tag: "dog_sleeping_page";
+        tag: "sleeping_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -287,38 +272,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-sleep";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "ZZZzzzz...";
-                margin-bottom: 15;
-                styles ["title-1", "NeutralText"]
-              }
+                Label {
+                  label: "ZZZzzzz...";
+                  margin-bottom: 15;
+                  styles ["title-1", "NeutralText"]
+                }
 
-              Label {
-                label: "The Doggo is sleeping right now";
-                margin-bottom: 20;
-                styles ["title-3", "NeutralText"]
-              }
-            };
+                Label {
+                  label: "The Doggo is sleeping right now";
+                  margin-bottom: 20;
+                  styles ["title-3", "NeutralText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_bite_page {
+      Adw.NavigationPage bite_page {
         title: "Doggo Bit You";
-        tag: "dog_bite_page";
+        tag: "bite_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -331,38 +312,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-angry";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "BITE!";
-                margin-bottom: 15;
-                styles ["title-1", "UnfriendlyText"]
-              }
+                Label {
+                  label: "BITE!";
+                  margin-bottom: 15;
+                  styles ["title-1", "UnfriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo bit you!!";
-                margin-bottom: 20;
-                styles ["title-3", "UnfriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo bit you!!";
+                  margin-bottom: 20;
+                  styles ["title-3", "UnfriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_dead_page {
+      Adw.NavigationPage dead_page {
         title: "Doggo Is Dead";
-        tag: "dog_dead_page";
+        tag: "dead_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -375,38 +352,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-dead";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "Beep.. Beep.. Beep.. Beeeeep";
-                margin-bottom: 15;
-                styles ["title-1", "UnfriendlyText"]
-              }
+                Label {
+                  label: "Beep.. Beep.. Beeeeep";
+                  margin-bottom: 15;
+                  styles ["title-1", "UnfriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo had a heart attack!!";
-                margin-bottom: 20;
-                styles ["title-3", "UnfriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo had a heart attack!!";
+                  margin-bottom: 20;
+                  styles ["title-3", "UnfriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_food_page {
+      Adw.NavigationPage food_page {
         title: "Doggo Likes Your Food";
-        tag: "dog_food_page";
+        tag: "food_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar_eating {
@@ -419,38 +392,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "Woof Woof!";
-                margin-bottom: 15;
-                styles ["title-1", "FriendlyText"]
-              }
+                Label {
+                  label: "Woof Woof!";
+                  margin-bottom: 15;
+                  styles ["title-1", "FriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo likes your food";
-                margin-bottom: 15;
-                styles ["title-3", "FriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo likes your food";
+                  margin-bottom: 15;
+                  styles ["title-3", "FriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_dislikefood_page {
+      Adw.NavigationPage dislikefood_page {
         title: "Doggo Dislikes Your Food";
-        tag: "dog_dislikefood_page";
+        tag: "dislikefood_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar_dislikefood {
@@ -463,38 +432,34 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-angry";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "GRR.. WOOF";
-                margin-bottom: 15;
-                styles ["title-1", "UnfriendlyText"]
-              }
+                Label {
+                  label: "GRR.. WOOF";
+                  margin-bottom: 15;
+                  styles ["title-1", "UnfriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo does not like your food";
-                margin-bottom: 15;
-                styles ["title-3", "UnfriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo does not like your food";
+                  margin-bottom: 15;
+                  styles ["title-3", "UnfriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_deadfood_page {
+      Adw.NavigationPage deadfood_page {
         title: "Doggo Is Dead";
-        tag: "dog_deadfood_page";
+        tag: "deadfood_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar_deadfood {
@@ -507,38 +472,35 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-dead";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "Uh Oh";
-                margin-bottom: 15;
-                styles ["title-1", "UnfriendlyText"]
-              }
+                Label {
+                  label: "Uh Oh";
+                  margin-bottom: 15;
+                  styles ["title-1", "UnfriendlyText"]
+                }
 
-              Label {
-                label: "The Doggo died because of your food";
-                margin-bottom: 15;
-                styles ["title-3", "UnfriendlyText"]
-              }
-            };
+                Label {
+                  label: "The Doggo died because of your food.";
+                  margin-bottom: 15;
+                  styles ["title-3", "UnfriendlyText"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_abandon_page {
+      Adw.NavigationPage abandon_page {
         title: "Doggo Abandoned";
-        tag: "dog_abandon_page";
+        tag: "abandon_page";
+        can-pop: false;
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -551,38 +513,45 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog-scared";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "You Abandoned Doggo";
-                margin-bottom: 15;
-                styles ["title-1", "UnfriendlyText"]
-              }
+                Label {
+                  label: "You Abandoned The Doggo";
+                  margin-bottom: 15;
+                  styles ["title-1", "UnfriendlyText"]
+                }
 
-              Label {
-                label: "How could you...";
-                margin-bottom: 20;
-                styles ["title-3", "UnfriendlyText"]
-              }
-            };
+                Label {
+                  label: "How... how could you";
+                  margin-bottom: 20;
+                  styles ["title-3", "UnfriendlyText"]
+                }
+
+                Button {
+                  action-name: "app.quit";
+                  child: Adw.ButtonContent {
+                    label: "Close in regret";
+                    icon-name: "window-close-symbolic";
+                    halign: center;
+                  };
+                  margin-bottom: 15;
+                  styles ["pill", "abandonbutton", "opaque"]
+                }
+              };
+            }
           };
         };
       }
 
-      Adw.NavigationPage dog_clicker_page {
-        title: "Doggo Clicker Mode";
-        tag: "dog_clicker_page";
+      Adw.NavigationPage clicker_page {
+        title: "Clicker";
+        tag: "clicker_page";
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
@@ -595,42 +564,32 @@ template $DogWindow : Adw.ApplicationWindow {
             }
           }
           content:
-          Adw.Clamp {
-            maximum-size: 250;
-            child: Box {
-              orientation: vertical;
-              halign: center;
-              valign: center;
-              Image {
-                icon-name: "dog";
-                pixel-size: 196;
-                margin-bottom: 15;
-                styles ["icon-dropshadow"]
-              }
+          ScrolledWindow {
+            Adw.Clamp {
+              maximum-size: 250;
+              child: Box {
+                orientation: vertical;
+                halign: center;
+                valign: center;
 
-              Label {
-                label: "Clicker Mode";
-                margin-bottom: 15;
-                styles ["title-1"]
-              }
+                Label clickslabel {
+                  label: "0 Clicks";
+                  margin-bottom: 20;
+                  styles ["title-1"]
+                }
 
-              Label clickslabel {
-                label: "0 Clicks";
-                margin-bottom: 20;
-                styles ["title-3"]
-              }
-
-              Button clickbutton {
-                action-name: "win.click";
-                child: Adw.ButtonContent {
-                  label: "Pet Doggo";
-                  icon-name: "dog-symbolic";
-                  halign: center;
-                };
-                margin-bottom: 15;
-                styles ["pill", "petbutton", "opaque"]
-              }
-            };
+                Button clickbutton {
+                  action-name: "win.click";
+                  child: Adw.ButtonContent {
+                    label: "Click";
+                    icon-name: "hand-touch-symbolic";
+                    halign: center;
+                  };
+                  margin-bottom: 15;
+                  styles ["pill", "clickbutton", "opaque"]
+                }
+              };
+            }
           };
         };
       }

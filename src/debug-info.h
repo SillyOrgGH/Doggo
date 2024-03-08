@@ -1,6 +1,6 @@
 /* debug-info.h
  *
- * Copyright 2023 sungsphinx
+ * Copyright 2024 sungsphinx, 2023-2024 Silly Org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,6 +24,6 @@
 
 G_BEGIN_DECLS
 
-char *dog_generate_debug_info (void);
+char *doggo_generate_debug_info (void);
 
 G_END_DECLS

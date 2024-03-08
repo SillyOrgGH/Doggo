@@ -10,17 +10,22 @@ gnome = import('gnome')
 fs = import('fs')
 cc = meson.get_compiler('c')
 
+application_name = 'Doggo'
+developer_name = 'Silly Org'
+version_codename = 'Boing Sheet'
+dev_tag = 'adaptive'
+
 if get_option('profile') == 'development'
   profile = '.Devel'
   if fs.is_dir('.git')
     vcs_tag = run_command('git', 'rev-parse', '--short', 'HEAD', check: true).stdout().strip()
     if vcs_tag == ''
-      version_suffix = '-devel'
+      version_suffix = '-devel-@0@'.format(dev_tag)
     else
-      version_suffix = '-@0@'.format(vcs_tag)
+      version_suffix = '-@0@-@1@'.format(vcs_tag, dev_tag)
     endif
   else
-    version_suffix = '-devel'
+    version_suffix = '-devel-@0@'.format(dev_tag)
   endif
 else
   profile = ''
@@ -28,9 +33,6 @@ else
 endif
 
 application_id = 'app.drey.Doggo@0@'.format(profile)
-application_name = 'Doggo'
-developer_name = 'Silly Org'
-version_codename = 'Drey'
 
 prefix = get_option('prefix')
 datadir = prefix / get_option('datadir')
@@ -105,6 +107,7 @@ test_c_args = [
   '-fno-strict-aliasing',
   ['-Werror=format-security', '-Werror=format=2'],
 ]
+
 if get_option('buildtype') != 'plain'
   test_c_args += '-fstack-protector-strong'
 endif

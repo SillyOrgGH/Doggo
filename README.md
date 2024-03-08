@@ -4,9 +4,6 @@
 > **Warning**
 > Flatpak is the **only officially supported** way of distributing this app, **any bug reports by anyone who uses a non-flatpak version will be closed.**
 
-> **Note**
-> Doggo's app id is being transitioned over to `app.drey.Doggo`, go [here](https://flathub.org/apps/page.codeberg.SOrg.DogGTK) for the current Flathub page
-
 [![Flathub](https://img.shields.io/flathub/v/app.drey.Doggo?logo=flathub&logoColor=white&label=Flathub)][flathub]
 [![Flathub Installs](https://img.shields.io/flathub/downloads/app.drey.Doggo?logo=flathub&logoColor=white&label=Installs)][flathub]
 [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
@@ -22,7 +19,7 @@ Clicker &amp; chance game</br>[Silly Org Website](https://sorg.codeberg.page) ·
 </div>
 
 ## Screenshots
-![Main Window](data/screenshots/screenshot-1.png) | ![Dog Is Friendly Page](data/screenshots/screenshot-2.png) | ![Dog Is Unfriendly Page](data/screenshots/screenshot-3.png)
+![Main Window](data/screenshots/screenshot-1.png) | ![Doggo Is Friendly Page](data/screenshots/screenshot-2.png) | ![Doggo Is Unfriendly Page](data/screenshots/screenshot-3.png)
 -------------------------------------------- | -------------------------------------- | ----------------------------------------------
 
 ## Clone Repo?

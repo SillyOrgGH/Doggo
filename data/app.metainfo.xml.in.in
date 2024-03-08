@@ -21,16 +21,16 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <caption>Main Window</caption>
-      <image type="source" width="722" height="722">https://codeberg.org/SOrg/Doggo/raw/branch/main/data/screenshots/screenshot-1.png</image>
+      <caption>Welcome Page</caption>
+      <image type="source" width="622" height="717">https://codeberg.org/SOrg/Doggo/raw/branch/main/data/screenshots/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <caption>Dog Is Friendly Page</caption>
-      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/data/screenshots/screenshot-2.png</image>
+      <caption>Doggo Is Friendly</caption>
+      <image type="source" width="622" height="717">https://codeberg.org/SOrg/Doggo/raw/branch/main/data/screenshots/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <caption>Dog Is Unfriendly Page</caption>
-      <image type="source" width="422" height="290">https://codeberg.org/SOrg/Doggo/raw/branch/main/data/screenshots/screenshot-3.png</image>
+      <caption>Doggo Is Unfriendly</caption>
+      <image type="source" width="622" height="717">https://codeberg.org/SOrg/Doggo/raw/branch/main/data/screenshots/screenshot-3.png</image>
     </screenshot>
   </screenshots>
   <releases>

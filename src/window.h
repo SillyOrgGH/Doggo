@@ -1,6 +1,6 @@
 /* window.h
  *
- * Copyright 2023 sungsphinx
+ * Copyright 2024 sungsphinx, 2023-2024 Silly Org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,8 +24,8 @@
 
 G_BEGIN_DECLS
 
-#define DOG_TYPE_WINDOW (dog_window_get_type())
+#define DOGGO_TYPE_WINDOW (doggo_window_get_type())
 
-G_DECLARE_FINAL_TYPE (DogWindow, dog_window, DOG, WINDOW, AdwApplicationWindow)
+G_DECLARE_FINAL_TYPE (DoggoWindow, doggo_window, DOGGO, WINDOW, AdwApplicationWindow)
 
 G_END_DECLS

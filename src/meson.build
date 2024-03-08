@@ -12,7 +12,7 @@ dog_sources = [
 
 dog_deps = [
   dependency('gtk4'),
-  dependency('libadwaita-1', version: '>= 1.2'),
+  dependency('libadwaita-1', version: '>= 1.5'),
 ]
 
 executable('doggo', dog_sources,
