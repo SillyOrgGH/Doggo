@@ -19,6 +19,10 @@
       <li>Abandoning the Doggo</li>
     </ol>
   </description>
+  <branding>
+    <color type="primary" scheme_preference="light">#cdab8f</color>
+    <color type="primary" scheme_preference="dark">#63452c</color>
+  </branding>
   <screenshots>
     <screenshot type="default">
       <caption>Welcome Page</caption>
